@@ -1,0 +1,1990 @@
+Script started on 2023-01-11 10:38:54+05:30 [TERM="xterm-256color" TTY="/dev/tty1" COLUMNS="120" LINES="30"]
+(base) ]0;sourav@TIGER02474: ~[01;32msourav@TIGER02474[00m:[01;34m~[00m$ ls
+[0m[01;34mTCE2023[0m  [01;34mminiconda3[0m  my_unix_session
+(base) ]0;sourav@TIGER02474: ~[01;32msourav@TIGER02474[00m:[01;34m~[00m$ pwd
+/home/sourav
+(base) ]0;sourav@TIGER02474: ~[01;32msourav@TIGER02474[00m:[01;34m~[00m$ c[Kcd TCE2023
+(base) ]0;sourav@TIGER02474: ~/TCE2023[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023[00m$ mkdir shell[K[K[K[K[K[K[K[K[K[K[Kls [K -F
+(base) ]0;sourav@TIGER02474: ~/TCE2023[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023[00m$ cd ..
+(base) ]0;sourav@TIGER02474: ~[01;32msourav@TIGER02474[00m:[01;34m~[00m$ ls -F
+[0m[01;34mTCE2023[0m/  [01;34mminiconda3[0m/  my_unix_session
+(base) ]0;sourav@TIGER02474: ~[01;32msourav@TIGER02474[00m:[01;34m~[00m$ ls --hekp[K[Klp
+Usage: ls [OPTION]... [FILE]...
+List information about the FILEs (the current directory by default).
+Sort entries alphabetically if none of -cftuvSUX nor --sort is specified.
+
+Mandatory arguments to long options are mandatory for short options too.
+  -a, --all                  do not ignore entries starting with .
+  -A, --almost-all           do not list implied . and ..
+      --author               with -l, print the author of each file
+  -b, --escape               print C-style escapes for nongraphic characters
+      --block-size=SIZE      with -l, scale sizes by SIZE when printing them;
+                               e.g., '--block-size=M'; see SIZE format below
+  -B, --ignore-backups       do not list implied entries ending with ~
+  -c                         with -lt: sort by, and show, ctime (time of last
+                               modification of file status information);
+                               with -l: show ctime and sort by name;
+                               otherwise: sort by ctime, newest first
+  -C                         list entries by columns
+      --color[=WHEN]         colorize the output; WHEN can be 'always' (default
+                               if omitted), 'auto', or 'never'; more info below
+  -d, --directory            list directories themselves, not their contents
+  -D, --dired                generate output designed for Emacs' dired mode
+  -f                         do not sort, enable -aU, disable -ls --color
+  -F, --classify             append indicator (one of */=>@|) to entries
+      --file-type            likewise, except do not append '*'
+      --format=WORD          across -x, commas -m, horizontal -x, long -l,
+                               single-column -1, verbose -l, vertical -C
+      --full-time            like -l --time-style=full-iso
+  -g                         like -l, but do not list owner
+      --group-directories-first
+                             group directories before files;
+                               can be augmented with a --sort option, but any
+                               use of --sort=none (-U) disables grouping
+  -G, --no-group             in a long listing, don't print group names
+  -h, --human-readable       with -l and -s, print sizes like 1K 234M 2G etc.
+      --si                   likewise, but use powers of 1000 not 1024
+  -H, --dereference-command-line
+                             follow symbolic links listed on the command line
+      --dereference-command-line-symlink-to-dir
+                             follow each command line symbolic link
+                               that points to a directory
+      --hide=PATTERN         do not list implied entries matching shell PATTERN
+                               (overridden by -a or -A)
+      --hyperlink[=WHEN]     hyperlink file names; WHEN can be 'always'
+                               (default if omitted), 'auto', or 'never'
+      --indicator-style=WORD  append indicator with style WORD to entry names:
+                               none (default), slash (-p),
+                               file-type (--file-type), classify (-F)
+  -i, --inode                print the index number of each file
+  -I, --ignore=PATTERN       do not list implied entries matching shell PATTERN
+  -k, --kibibytes            default to 1024-byte blocks for disk usage;
+                               used only with -s and per directory totals
+  -l                         use a long listing format
+  -L, --dereference          when showing file information for a symbolic
+                               link, show information for the file the link
+                               references rather than for the link itself
+  -m                         fill width with a comma separated list of entries
+  -n, --numeric-uid-gid      like -l, but list numeric user and group IDs
+  -N, --literal              print entry names without quoting
+  -o                         like -l, but do not list group information
+  -p, --indicator-style=slash
+                             append / indicator to directories
+  -q, --hide-control-chars   print ? instead of nongraphic characters
+      --show-control-chars   show nongraphic characters as-is (the default,
+                               unless program is 'ls' and output is a terminal)
+  -Q, --quote-name           enclose entry names in double quotes
+      --quoting-style=WORD   use quoting style WORD for entry names:
+                               literal, locale, shell, shell-always,
+                               shell-escape, shell-escape-always, c, escape
+                               (overrides QUOTING_STYLE environment variable)
+  -r, --reverse              reverse order while sorting
+  -R, --recursive            list subdirectories recursively
+  -s, --size                 print the allocated size of each file, in blocks
+  -S                         sort by file size, largest first
+      --sort=WORD            sort by WORD instead of name: none (-U), size (-S),
+                               time (-t), version (-v), extension (-X)
+      --time=WORD            with -l, show time as WORD instead of default
+                               modification time: atime or access or use (-u);
+                               ctime or status (-c); also use specified time
+                               as sort key if --sort=time (newest first)
+      --time-style=TIME_STYLE  time/date format with -l; see TIME_STYLE below
+  -t                         sort by modification time, newest first
+  -T, --tabsize=COLS         assume tab stops at each COLS instead of 8
+  -u                         with -lt: sort by, and show, access time;
+                               with -l: show access time and sort by name;
+                               otherwise: sort by access time, newest first
+  -U                         do not sort; list entries in directory order
+  -v                         natural sort of (version) numbers within text
+  -w, --width=COLS           set output width to COLS.  0 means no limit
+  -x                         list entries by lines instead of by columns
+  -X                         sort alphabetically by entry extension
+  -Z, --context              print any security context of each file
+  -1                         list one file per line.  Avoid '\n' with -q or -b
+      --help     display this help and exit
+      --version  output version information and exit
+
+The SIZE argument is an integer and optional unit (example: 10K is 10*1024).
+Units are K,M,G,T,P,E,Z,Y (powers of 1024) or KB,MB,... (powers of 1000).
+
+The TIME_STYLE argument can be full-iso, long-iso, iso, locale, or +FORMAT.
+FORMAT is interpreted like in date(1).  If FORMAT is FORMAT1<newline>FORMAT2,
+then FORMAT1 applies to non-recent files and FORMAT2 to recent files.
+TIME_STYLE prefixed with 'posix-' takes effect only outside the POSIX locale.
+Also the TIME_STYLE environment variable sets the default style to use.
+
+Using color to distinguish file types is disabled both by default and
+with --color=never.  With --color=auto, ls emits color codes only when
+standard output is connected to a terminal.  The LS_COLORS environment
+variable can change the settings.  Use the dircolors command to set it.
+
+Exit status:
+ 0  if OK,
+ 1  if minor problems (e.g., cannot access subdirectory),
+ 2  if serious trouble (e.g., cannot access command-line argument).
+
+GNU coreutils online help: <https://www.gnu.org/software/coreutils/>
+Report ls translation bugs to <https://translationproject.org/team/>
+Full documentation at: <https://www.gnu.org/software/coreutils/ls>
+or available locally via: info '(coreutils) ls invocation'
+(base) ]0;sourav@TIGER02474: ~[01;32msourav@TIGER02474[00m:[01;34m~[00m$ man ls
+[?1049h[22;0;0t[?1h=LS(1)                                               User Commands                                               LS(1)[m
+[m
+[1mNAME[0m[m
+       ls - list directory contents[m
+[m
+[1mSYNOPSIS[0m[m
+       [1mls[0m [[4mOPTION[24m]... [[4mFILE[24m]...[m
+[m
+[1mDESCRIPTION[0m[m
+       List  information  about the FILEs (the current directory by default).  Sort entries alphabetically if none of[m
+       [1m-cftuvSUX[0m nor [1m--sort[0m is specified.[m
+[m
+       Mandatory arguments to long options are mandatory for short options too.[m
+[m
+       [1m-a[0m, [1m--all[0m[m
+              do not ignore entries starting with .[m
+[m
+       [1m-A[0m, [1m--almost-all[0m[m
+              do not list implied . and ..[m
+[m
+       [1m--author[0m[m
+              with [1m-l[0m, print the author of each file[m
+[m
+       [1m-b[0m, [1m--escape[0m[m
+              print C-style escapes for nongraphic characters[m
+[m
+       [1m--block-size[0m=[4mSIZE[24m[m
+              with [1m-l[0m, scale sizes by SIZE when printing them; e.g., '--block-size=M'; see SIZE format below[m
+[m
+[7m Manual page ls(1) line 1 (press h for help or q to quit)[27m[K[K[?1l>[?1049l[23;0;0t(base) ]0;sourav@TIGER02474: ~[01;32msourav@TIGER02474[00m:[01;34m~[00m$ ls -j
+ls: invalid option -- 'j'
+Try 'ls --help' for more information.
+(base) ]0;sourav@TIGER02474: ~[01;32msourav@TIGER02474[00m:[01;34m~[00m$ ls
+[0m[01;34mTCE2023[0m  [01;34mminiconda3[0m  my_unix_session
+(base) ]0;sourav@TIGER02474: ~[01;32msourav@TIGER02474[00m:[01;34m~[00m$ ls -t
+my_unix_session  [0m[01;34mTCE2023[0m  [01;34mminiconda3[0m
+(base) ]0;sourav@TIGER02474: ~[01;32msourav@TIGER02474[00m:[01;34m~[00m$ ls -r
+my_unix_session  [0m[01;34mminiconda3[0m  [01;34mTCE2023[0m
+(base) ]0;sourav@TIGER02474: ~[01;32msourav@TIGER02474[00m:[01;34m~[00m$ ls -F -a
+[0m[01;34m.[0m/   .bash_history  .bashrc  [01;34m.git[0m/       [01;34m.landscape[0m/  .profile                   [01;34mTCE2023[0m/     my_unix_session
+[01;34m..[0m/  .bash_logout   [01;34m.conda[0m/  .gitconfig  .motd_shown  .sudo_as_admin_successful  [01;34mminiconda3[0m/
+(base) ]0;sourav@TIGER02474: ~[01;32msourav@TIGER02474[00m:[01;34m~[00m$ cd -
+/home/sourav/TCE2023
+(base) ]0;sourav@TIGER02474: ~/TCE2023[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023[00m$ cd home
+bash: cd: home: No such file or directory
+(base) ]0;sourav@TIGER02474: ~/TCE2023[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023[00m$ cd ~
+(base) ]0;sourav@TIGER02474: ~[01;32msourav@TIGER02474[00m:[01;34m~[00m$ ;[Kls pwd
+ls: cannot access 'pwd': No such file or directory
+(base) ]0;sourav@TIGER02474: ~[01;32msourav@TIGER02474[00m:[01;34m~[00m$ ls-[K -r
+my_unix_session  [0m[01;34mminiconda3[0m  [01;34mTCE2023[0m
+(base) ]0;sourav@TIGER02474: ~[01;32msourav@TIGER02474[00m:[01;34m~[00m$ ls -s
+total 24
+ 0 [0m[01;34mTCE2023[0m   0 [01;34mminiconda3[0m  24 my_unix_session
+(base) ]0;sourav@TIGER02474: ~[01;32msourav@TIGER02474[00m:[01;34m~[00m$ cd TCE2023
+(base) ]0;sourav@TIGER02474: ~/TCE2023[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023[00m$ mkdir north-pacific-gyre
+(base) ]0;sourav@TIGER02474: ~/TCE2023[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023[00m$ cd nor[K[K[K[K[K[Kls
+[0m[01;34mnorth-pacific-gyre[0m
+(base) ]0;sourav@TIGER02474: ~/TCE2023[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023[00m$ LS NO[K[K[K[K[Kn[Kls nor
+ls: cannot access 'nor': No such file or directory
+(base) ]0;sourav@TIGER02474: ~/TCE2023[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023[00m$ ls m[Knorth-pacific-gyre/
+(base) ]0;sourav@TIGER02474: ~/TCE2023[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023[00m$ exit
+exit
+
+Script done on 2023-01-11 10:49:12+05:30 [COMMAND_EXIT_CODE="0"]
+Script started on 2023-01-11 14:30:26+05:30 [TERM="xterm-256color" TTY="/dev/tty1" COLUMNS="120" LINES="30"]
+(base) ]0;sourav@TIGER02474: ~[01;32msourav@TIGER02474[00m:[01;34m~[00m$ cd TCE2023/not[Krth-pacific-gyre/
+(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre[00m$ mkdir thesis
+(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre[00m$ cd thesis
+(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre/thesis[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre/thesis[00m$ mkdir -p ../project/data ../projetc[K[Kct/results
+(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre/thesis[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre/thesis[00m$ ls
+(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre/thesis[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre/thesis[00m$ cd ..
+(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre[00m$ ls
+[0m[01;34mproject[0m  [01;34mthesis[0m
+(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre[00m$ ls po[Kroject
+[0m[01;34mdata[0m  [01;34mresults[0m
+(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre[00m$ ls -FR project
+project:
+[0m[01;34mdata[0m/  [01;34mresults[0m/
+
+project/data:
+
+project/results:
+(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre[00m$ cd thesis
+(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre/thesis[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre/thesis[00m$ nano draft.txt
+[?2004h[?1049h[22;0;0t[1;30r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[28;55H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 4.8                                           draft.txt                                                      [1;119H(B[m[29d(B[0;7m^G(B[m Get Help    (B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut Text    (B[0;7m^J(B[m Justify     (B[0;7m^C(B[m Cur Pos     (B[0;7mM-U(B[m Undo[106G(B[0;7mM-A(B[m Mark Text[30d(B[0;7m^X(B[m Exit[30;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste Text  (B[0;7m^T(B[m To Spell    (B[0;7m^_(B[m Go To Line  (B[0;7mM-E(B[m Redo[106G(B[0;7mM-6(B[m Copy Text[28d[2d[39;49m(B[m[?12l[?25h[?25l[28d[J[30d[?12l[?25h[30;1H[?1049l[23;0;0t[?1l>[?2004l(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre/thesis[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre/thesis[00m$ ls
+(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre/thesis[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre/thesis[00m$ nano draft.txrt[K[Kt
+[?2004h[?1049h[22;0;0t[1;30r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[28;55H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 4.8                                           draft.txt                                                      [1;119H(B[m[29d(B[0;7m^G(B[m Get Help    (B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut Text    (B[0;7m^J(B[m Justify     (B[0;7m^C(B[m Cur Pos     (B[0;7mM-U(B[m Undo[106G(B[0;7mM-A(B[m Mark Text[30d(B[0;7m^X(B[m Exit[30;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste Text  (B[0;7m^T(B[m To Spell    (B[0;7m^_(B[m Go To Line  (B[0;7mM-E(B[m Redo[106G(B[0;7mM-6(B[m Copy Text[28d[2d[39;49m(B[m[?12l[?25h[?25l[1;111H(B[0;7mModified(B[m[2d"[?12l[?25h[?25lI[?12l[?25h[?25lt[?12l[?25h[?25l'[?12l[?25h[?25ls[?12l[?25h[?25l [?12l[?25h[?25l[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l[K[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25lI[?12l[?25h[?25lt[?12l[?25h[?25ls[?12l[?25h[?25l [?12l[?25h[?25l'[?12l[?25h[?25ls[?12l[?25h[?25l [?12l[?25h[?25ln[?12l[?25h[?25lo[?12l[?25h[?25lt[28d[K[2;9H[?12l[?25h[?25l [?12l[?25h[?25l"[?12l[?25h[?25lp[?12l[?25h[?25li[?12l[?25h[?25l [?12l[?25h[?25lu[?12l[?25h[?25lb[?12l[?25h[?25ll[?12l[?25h[?25li[?12l[?25h[?25ls[?12l[?25h[?25lh[?12l[?25h[?25l [?12l[?25h[?25lo[?12l[?25h[?25lr[?12l[?25h[?25l [?12l[?25h[?25lp[?12l[?25h[?25le[?12l[?25h[?25lr[?12l[?25h[?25ls[?12l[?25h[?25li[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25li[?12l[?25h[?25ls[?12l[?25h[?25lh[?12l[?25h[?25l:[?12l[?25h[?25l [?12l[?25h[?25l"[?12l[?25h[?25l [?12l[?25h[?25la[?12l[?25h[?25ln[?12l[?25h[?25ly[?12l[?25h[?25l [?12l[?25h[?25lm[?12l[?25h[?25lo[?12l[?25h[?25lr[?12l[?25h[?25le[?12l[?25h[?25l,[?12l[?25h[?25l[3d[?12l[?25h[?25li[?12l[?25h[?25lt[?12l[?25h[?25l'[?12l[?25h[?25ls[?12l[?25h[?25l [?12l[?25h[?25la[?12l[?25h[?25l [?12l[?25h[?25l[?12l[?25h[?25l [?12l[?25h[?25l"[?12l[?25h[?25ls[?12l[?25h[?25la[?12l[?25h[?25l [?12l[?25h[?25lh[?12l[?25h[?25la[?12l[?25h[?25lr[?12l[?25h[?25le[?12l[?25h[?25l [?12l[?25h[?25la[?12l[?25h[?25ln[?12l[?25h[?25ld[?12l[?25h[?25l [?12l[?25h[?25lt[?12l[?25h[?25lh[?12l[?25h[?25lr[?12l[?25h[?25li[?12l[?25h[?25lv[?12l[?25h[?25le[?12l[?25h[?25l"[?12l[?25h[?25l.[?12l[?25h[?25l[4d[?12l[?25h[?25l[29;16H[15X[29;31H(B[0;7mM-D(B[m DOS Format[16X[29;61H(B[0;7mM-A(B[m Append[15X[29;93H(B[0;7mB(B[m Backup File[K[30;2H(B[0;7mC(B[m Cancel[16G[15X[30;31H(B[0;7mM-M(B[m Mac Format[16X[30;61H(B[0;7mM-P(B[m Prepend[19X[30;91H(B[0;7m^T(B[m To Files[K[28d(B[0;7mFile Name to Write: draft.txt                                                                                           [28;1H(B[m[28;30H[?12l[?25h[?25l[28;53H[1K (B[0;7m[ Writing... ](B[m[K[1;111H(B[0;7m        (B[m[28;52H(B[0;7m[ Wrote 3 lines ](B[m[29;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut Text    (B[0;7m^J(B[m Justify     (B[0;7m^C(B[m Cur Pos[93G(B[0;7mU(B[m Undo       (B[0;7mM-A(B[m Mark Text[30;2H(B[0;7mX(B[m Exit  [16G(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste Text  (B[0;7m^T(B[m To Spell    (B[0;7m^_(B[m Go To Line  (B[0;7mM-E(B[m Redo       (B[0;7mM-6(B[m Copy Text[28d[4d[?12l[?25h[?25l[29;16H[15X[29;31H(B[0;7mM-D(B[m DOS Format[16X[29;61H(B[0;7mM-A(B[m Append[15X[29;93H(B[0;7mB(B[m Backup File[K[30;2H(B[0;7mC(B[m Cancel[16G[15X[30;31H(B[0;7mM-M(B[m Mac Format[16X[30;61H(B[0;7mM-P(B[m Prepend[19X[30;91H(B[0;7m^T(B[m To Files[K[28d(B[0;7mFile Name to Write: draft.txt                                                                                           [28;1H(B[m[28;30H[?12l[?25h[?25l[28;53H[1K (B[0;7m[ Writing... ](B[m[K[1;119H[28;52H(B[0;7m[ Wrote 3 lines ](B[m[29;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut Text    (B[0;7m^J(B[m Justify     (B[0;7m^C(B[m Cur Pos[93G(B[0;7mU(B[m Undo       (B[0;7mM-A(B[m Mark Text[30;2H(B[0;7mX(B[m Exit  [16G(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste Text  (B[0;7m^T(B[m To Spell    (B[0;7m^_(B[m Go To Line  (B[0;7mM-E(B[m Redo       (B[0;7mM-6(B[m Copy Text[28d[4d[?12l[?25h[?25l[28d[J[30d[?12l[?25h[30;1H[?1049l[23;0;0t[?1l>[?2004l(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre/thesis[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre/thesis[00m$ ls
+draft.txt
+(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre/thesis[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre/thesis[00m$ exit
+exit
+
+Script done on 2023-01-11 14:36:14+05:30 [COMMAND_EXIT_CODE="0"]
+Script started on 2023-01-12 13:14:43+05:30 [TERM="xterm-256color" TTY="/dev/tty1" COLUMNS="120" LINES="30"]
+(base) ]0;sourav@TIGER02474: ~[01;32msourav@TIGER02474[00m:[01;34m~[00m$ ls
+[0m[01;34mTCE2023[0m  [01;34mminiconda3[0m  my_unix_session
+(base) ]0;sourav@TIGER02474: ~[01;32msourav@TIGER02474[00m:[01;34m~[00m$ cd TCE2023/
+(base) ]0;sourav@TIGER02474: ~/TCE2023[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023[00m$ s[Kls
+[0m[01;34mnorth-pacific-gyre[0m
+(base) ]0;sourav@TIGER02474: ~/TCE2023[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023[00m$ cd north-pacific-gyre/
+(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre[00m$ touch my_file.txst[K[K[Kxt
+(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre[00m$ ls
+my_file.txt  [0m[01;34mproject[0m  [01;34mthesis[0m
+(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre[00m$ rm my_i[Kfile.txt
+(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre[00m$ ls-[K -r
+[0m[01;34mthesis[0m  [01;34mproject[0m
+(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre[00m$ ls -FR
+.:
+[0m[01;34mproject[0m/  [01;34mthesis[0m/
+
+./project:
+[01;34mdata[0m/  [01;34mresults[0m/
+
+./project/data:
+
+./project/results:
+
+./thesis:
+draft.txt
+(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre[00m$ mv thesis/draft.txt thesis.[K/quotes.txt
+(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre[00m$ ls -FR
+.:
+[0m[01;34mproject[0m/  [01;34mthesis[0m/
+
+./project:
+[01;34mdata[0m/  [01;34mresults[0m/
+
+./project/data:
+
+./project/results:
+
+./thesis:
+quotes.txt
+(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre[00m$ mkdir[K[K[K[K[Kcd [K[K[Kmkdir -p proe[Kject/data/analyzed project/data/raw
+(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre[00m$ t9[Kouch project.da[K[K[K/data/analyzed/fruck[Ktose.data[K projectd[K/data/analyzed/su crose.dat
+(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre[00m$ ls project/data
+[0m[01;34manalyzed[0m  [01;34mraw[0m
+(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre[00m$ mc[Kv proe[Kject/data/[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kcd project/data/analyzed
+(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre/project/data/analyzed[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre/project/data/analyzed[00m$ ls
+fructose.dat  sucrose.dat
+(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre/project/data/analyzed[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre/project/data/analyzed[00m$ mv fructose.data sucrose.data ../raw/[K
+mv: cannot stat 'fructose.data': No such file or directory
+mv: cannot stat 'sucrose.data': No such file or directory
+(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre/project/data/analyzed[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre/project/data/analyzed[00m$ mv fructose.data sucrose.data ../raw[1P ../raw[1P
+(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre/project/data/analyzed[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre/project/data/analyzed[00m$ ls 
+(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre/project/data/analyzed[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre/project/data/analyzed[00m$ ls ../raw
+fructose.dat  sucrose.dat
+(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre/project/data/analyzed[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre/project/data/analyzed[00m$ cd 
+(base) ]0;sourav@TIGER02474: ~[01;32msourav@TIGER02474[00m:[01;34m~[00m$ cd TCE2023/north-pacific-gyre/
+(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre[00m$ ls
+[0m[01;34mproject[0m  [01;34mthesis[0m
+(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre[00m$ cd thesis
+(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre/thesis[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre/thesis[00m$ cp quotes.txt quotations.txt
+(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre/thesis[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre/thesis[00m$ ls
+quotations.txt  quotes.txt
+(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre/thesis[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre/thesis[00m$ cd ..
+(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre[00m$ cp -r thesis te[Khesis_backup
+(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre[00m$ ls
+[0m[01;34mproject[0m  [01;34mthesis[0m  [01;34mthesis_backup[0m
+(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre[00m$ ls thesis_backup/
+quotations.txt  quotes.txt
+(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre[00m$ rm -r thesis_[K[K[K[K[K[K[K[K[K[Kthesos[K[Kis_backup/
+rm: cannot remove 'thesis_backup/': Is a directory
+(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre[00m$ rm -r thesis_backup/
+(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre[00m$ ls
+[0m[01;34mproject[0m  [01;34mthesis[0m
+(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre[00m$ exit[K[K[K[Kls -r *.txt
+ls: cannot access '*.txt': No such file or directory
+(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre[00m$ ls -r *.txt[CF *.txt
+ls: cannot access '*.txt': No such file or directory
+(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre[00m$ ls -rF *.txt[1P[CR *.txt
+ls: cannot access '*.txt': No such file or directory
+(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre[00m$ ls -FR *.txt[K[K[Kdat
+ls: cannot access '*.dat': No such file or directory
+(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre[00m$ l[Kcd project/
+(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre/project[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre/project[00m$ ls
+[0m[01;34mdata[0m  [01;34mresults[0m
+(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre/project[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre/project[00m$ ls data
+[0m[01;34manalyzed[0m  [01;34mraw[0m
+(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre/project[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre/project[00m$ ls raw
+ls: cannot access 'raw': No such file or directory
+(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre/project[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre/project[00m$ ls raw[K[K[Kdata/raw
+fructose.dat  sucrose.dat
+(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre/project[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre/project[00m$ ls data/raw[C[C[C[C[C/*.dat
+data/raw/fructose.dat  data/raw/sucrose.dat
+(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre/project[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre/project[00m$ touch [K[K[K[K[K[Kls ?[Kdata/wa[K[Kraw/*oserose[C[C[C.data[K
+data/raw/sucrose.dat
+(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre/project[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre/project[00m$ ls data/raw/*rose.dat[1Pose.dat
+data/raw/fructose.dat  data/raw/sucrose.dat
+(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre/project[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre/project[00m$ ls data/raw/*ose.dat[C[C[C[1P.dat[1P.dat[1P.dat[1P.dat*.datu.datc.dat*.dat
+data/raw/fructose.dat  data/raw/sucrose.dat
+(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre/project[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre/project[00m$ ls data/raw/*uc*.dat[1P.dat[1P.dat[1P.dat[1P.dat*.dat[C[C[C[C[K?
+data/raw/fructose.dat  data/raw/sucrose.dat
+(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre/project[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre/project[00m$ exit
+exit
+
+Script done on 2023-01-12 13:33:55+05:30 [COMMAND_EXIT_CODE="0"]
+Script started on 2023-01-18 14:23:32+05:30 [TERM="xterm-256color" TTY="/dev/tty1" COLUMNS="120" LINES="30"]
+(base) ]0;sourav@TIGER02474: ~[01;32msourav@TIGER02474[00m:[01;34m~[00m$ cd[K[Kls
+[0m[01;34mTCE2023[0m  [01;34mminiconda3[0m  my_unix_session
+(base) ]0;sourav@TIGER02474: ~[01;32msourav@TIGER02474[00m:[01;34m~[00m$ cd TCE2023/
+(base) ]0;sourav@TIGER02474: ~/TCE2023[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023[00m$ ks
+ks: command not found
+(base) ]0;sourav@TIGER02474: ~/TCE2023[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023[00m$ ls
+[0m[01;34mnorth-pacific-gyre[0m
+(base) ]0;sourav@TIGER02474: ~/TCE2023[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023[00m$ cd north-pacific-gyre/
+(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre[00m$ ls
+[0m[01;34mproject[0m  [01;34mthesis[0m
+(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre[00m$ cd project/
+(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre/project[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre/project[00m$ ls
+[0m[01;34mdata[0m  [01;34mresults[0m
+(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre/project[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre/project[00m$ cd data
+(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre/project/data[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre/project/data[00m$ ls
+[0m[01;34manalyzed[0m  [01;34mraw[0m
+(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre/project/data[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre/project/data[00m$ cd raw
+(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre/project/data/raw[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre/project/data/raw[00m$ s[Kls
+fructose.dat  sucrose.dat
+(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre/project/data/raw[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre/project/data/raw[00m$ wc fructose.dat 
+0 0 0 fructose.dat
+(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre/project/data/raw[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre/project/data/raw[00m$ wc *.dat
+0 0 0 fructose.dat
+0 0 0 sucrose.dat
+0 0 0 total
+(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre/project/data/raw[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre/project/data/raw[00m$ wc -l &.[K[K*.data > lengths.txt
+wc: '*.data': No such file or directory
+(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre/project/data/raw[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre/project/data/raw[00m$ wc -l *.data > lengths.txt[1P
+(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre/project/data/raw[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre/project/data/raw[00m$ ls
+fructose.dat  lengths.txt  sucrose.dat
+(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre/project/data/raw[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre/project/data/raw[00m$ cat lengths.txt 
+0 fructose.dat
+0 sucrose.dat
+0 total
+(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre/project/data/raw[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre/project/data/raw[00m$ vim fructose.dat [K
+[?1049h[22;0;0t[>4;2m[?1h=[?2004h[1;30r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[30;1H"fructose.dat" 0L, 0C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[2;1H[94m~                                                                                                                       [3;1H~                                                                                                                       [4;1H~                                                                                                                       [5;1H~                                                                                                                       [6;1H~                                                                                                                       [7;1H~                                                                                                                       [8;1H~                                                                                                                       [9;1H~                                                                                                                       [10;1H~                                                                                                                       [11;1H~                                                                                                                       [12;1H~                                                                                                                       [13;1H~                                                                                                                       [14;1H~                                                                                                                       [15;1H~                                                                                                                       [16;1H~                                                                                                                       [17;1H~                                                                                                                       [18;1H~                                                                                                                       [19;1H~                                                                                                                       [20;1H~                                                                                                                       [21;1H~                                                                                                                       [22;1H~                                                                                                                       [23;1H~                                                                                                                       [24;1H~                                                                                                                       [25;1H~                                                                                                                       [26;1H~                                                                                                                       [27;1H~                                                                                                                       [28;1H~                                                                                                                       [29;1H~                                                                                                                       [m[30;103H0,0-1[9CAll[1;1H[?25h[?25l[30;93Hh[1;1H[30;93H [1;1H[?25h[?25l[30;93He[1;1H[30;93H [1;1H[?25h[?25l[30;93Hl[1;1H[30;93H [1;1H[?25h[?25l[30;93Hl[1;1H[30;93H [1;1H[?25h[?25l[30;93Ho[1;1H[30;93H [2;1H[30;1H[1m-- INSERT --[m[30;13H[K[30;103H2,1[11CAll[2;1H[K[2;1H[?25h[?25lh[30;105H2[2;2H[?25h[?25le[30;105H3[2;3H[?25h[?25ll[30;105H4[2;4H[?25h[?25ll[30;105H5[2;5H[?25h[?25lo[30;105H6[2;6H[?25h[?25l[30;105H7[2;7H[?25h[?25lt[30;105H8[2;8H[?25h[?25lh[30;105H9[2;9H[?25h[?25l[2;8H[K[30;105H8[2;8H[?25h[?25lr[30;105H9[2;9H[?25h[?25ly[30;105H10[2;10H[?25h[?25li[30;106H1[2;11H[?25h[?25ln[30;106H2[2;12H[?25h[?25lg[30;106H3[2;13H[?25h[?25l[30;106H4[2;14H[?25h[?25lt[30;106H5[2;15H[?25h[?25lo[30;106H6[2;16H[?25h[?25l[30;106H7[2;17H[?25h[?25lm[30;106H8[2;18H[?25h[?25la[30;106H9[2;19H[?25h[?25lk[30;105H20[2;20H[?25h[?25le[30;106H1[2;21H[?25h[?25l[30;106H2[2;22H[?25h[?25la[30;106H3[2;23H[?25h[?25lm[30;106H4[2;24H[?25h[?25le[30;106H5[2;25H[?25h[?25ln[30;106H6[2;26H[?25h[?25ld[30;106H7[2;27H[?25h[?25ls[30;106H8[2;28H[?25h[?25l[30;106H9[2;29H[?25h[?25lt[30;105H30[2;30H[?25h[?25lo[30;106H1[2;31H[?25h[?25l[30;106H2[2;32H[?25h[?25lt[30;106H3[2;33H[?25h[?25lh[30;106H4[2;34H[?25h[?25le[30;106H5[2;35H[?25h[?25l[30;106H6[2;36H[?25h[?25lf[30;106H7[2;37H[?25h[?25li[30;106H8[2;38H[?25h[?25ll[30;106H9[2;39H[?25h[?25le[30;105H40[2;40H[?25h[?25l[3;1H[K[30;103H3,1 [3;1H[?25h[?25lL[30;105H2[3;2H[?25h[?25le[30;105H3[3;3H[?25h[?25lt[30;105H4[3;4H[?25h[?25l[30;105H5[3;5H[?25h[?25lu[30;105H6[3;6H[?25h[?25ls[30;105H7[3;7H[?25h[?25l[30;105H8[3;8H[?25h[?25ls[30;105H9[3;9H[?25h[?25l[3;8H[K[30;105H8[3;8H[?25h[?25lo[30;105H9[3;9H[?25h[?25lb[30;105H10[3;10H[?25h[?25ls[30;106H1[3;11H[?25h[?25le[30;106H2[3;12H[?25h[?25lr[30;106H3[3;13H[?25h[?25lv[30;106H4[3;14H[?25h[?25le[30;106H5[3;15H[?25h[?25l[30;106H6[3;16H[?25h[?25lt[30;106H7[3;17H[?25h[?25lh[30;106H8[3;18H[?25h[?25le[30;106H9[3;19H[?25h[?25l[30;105H20[3;20H[?25h[?25lc[30;106H1[3;21H[?25h[?25lh[30;106H2[3;22H[?25h[?25la[30;106H3[3;23H[?25h[?25ln[30;106H4[3;24H[?25h[?25lf[30;106H5[3;25H[?25h[?25le[30;106H6[3;26H[?25h[?25ls[30;106H7[3;27H[?25h[?25l[3;26H[K[30;106H6[3;26H[?25h[?25l[3;25H[K[30;106H5[3;25H[?25h[?25l[3;24H[K[30;106H4[3;24H[?25h[?25lg[30;106H5[3;25H[?25h[?25le[30;106H6[3;26H[?25h[?25ls[30;106H7[3;27H[?25h[?25l[30;106H8[3;28H[?25h[?25lo[30;106H9[3;29H[?25h[?25ln[30;105H30[3;30H[?25h[?25l[30;106H1[3;31H[?25h[?25lw[30;106H2[3;32H[?25h[?25l[3;31H[K[30;106H1[3;31H[?25h[?25l[30;106H0[3;30H[?25h[?25l[3;29H[K[30;105H29[3;29H[?25h[?25l[3;28H[K[30;106H8[3;28H[?25h[?25li[30;106H9[3;29H[?25h[?25ln[30;105H30[3;30H[?25h[?25lv[30;106H1[3;31H[?25h[?25l[3;30H[K[30;106H0[3;30H[?25h[?25l[30;106H1[3;31H[?25h[?25lw[30;106H2[3;32H[?25h[?25lo[30;106H3[3;33H[?25h[?25lr[30;106H4[3;34H[?25h[?25lk[30;106H5[3;35H[?25h[?25l[3;34H[K[30;106H4[3;34H[?25h[?25ld[30;106H5[3;35H[?25h[?25l[30;106H6[3;36H[?25h[?25lc[30;106H7[3;37H[?25h[?25lo[30;106H8[3;38H[?25h[?25lu[30;106H9[3;39H[?25h[?25ln[30;105H40[3;40H[?25h[?25lt[30;106H1[3;41H[?25h[?25ls[30;106H2[3;42H[?25h[?25l[4;1H[K[30;103H4,1 [4;1H[?25h[?25la[30;105H2[4;2H[?25h[?25ln[30;105H3[4;3H[?25h[?25ld[30;105H4[4;4H[?25h[?25l[30;105H5[4;5H[?25h[?25li[30;105H6[4;6H[?25h[?25ln[30;105H7[4;7H[?25h[?25l[30;105H8[4;8H[?25h[?25ll[30;105H9[4;9H[?25h[?25le[30;105H10[4;10H[?25h[?25ln[30;106H1[4;11H[?25h[?25lg[30;106H2[4;12H[?25h[?25lt[30;106H3[4;13H[?25h[?25lh[30;106H4[4;14H[?25h[30;1H[K[4;13H[?25l[30;93H^[[4;13H[30;93H  [4;14H[30;103H4,13[10CAll[4;13H[?25h[?25l[30;1HType  :qa!  and press <Enter> to abandon all changes and exit Vim[30;103H[K[30;103H4,13[10CAll[4;13H[?25h[?25l[30;93H"[4;13H[?25h[?25l[30;94Hq[4;13H[?25h[?25l[30;95Ha[4;13H[30;93H   [4;14H[30;1H[1m-- INSERT --[m[30;13H[K[30;103H4,14[10CAll[4;14H[?25h[?25l:[30;106H5[4;15H[?25h[?25lq[30;106H6[4;16H[?25h[?25la[30;106H7[4;17H[?25h[?25l[4;16H[K[30;106H6[4;16H[?25h[?25l[4;15H[K[30;106H5[4;15H[?25h[?25l[4;14H[K[30;106H4[4;14H[?25h[30;1H[K[4;13H[?25l[30;93H^[[4;13H[30;93H  [4;14H[30;103H4,13[10CAll[4;13H[?25h[?25l[30;93Hq[4;13H[?25h[?25l[30;94Ha[4;13H[30;1H[1mrecording @a[m[30;93H[K[30;103H4,13[10CAll[4;13H[?25h[?25l[30;93H![4;13H[?25h[?25l[30;94H^M[4;13H[30;93H   [4;13H[?25h[?25l[30;93H:[4;13H[30;1H[K[30;1H:[?2004h[?25hqa1[?25l[30;4H[K[30;4H[?25h![?25l[?2004l[23;2t[23;1t[30;1H[K[30;1H[?2004l[?1l>[?25h[>4;m[?1049l[23;0;0t(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre/project/data/raw[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre/project/data/raw[00m$ wc vim fructose.datcat lengths.txt ls[Kwc -l *.dat > lengths.txt[1@a[C[C[C[C[C[C[C[C[C[C[C[C[C[C*.dat[Kfructose.dat [8P*.dat
+0 0 0 fructose.dat
+0 0 0 sucrose.dat
+0 0 0 total
+(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre/project/data/raw[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre/project/data/raw[00m$ cat fructose.dat 
+(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre/project/data/raw[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre/project/data/raw[00m$ vim fructose.dat 
+[?1049h[22;0;0t[>4;2m[?1h=[?2004h[1;30r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[30;1H"fructose.dat" 0L, 0C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[2;1H[94m~                                                                                                                       [3;1H~                                                                                                                       [4;1H~                                                                                                                       [5;1H~                                                                                                                       [6;1H~                                                                                                                       [7;1H~                                                                                                                       [8;1H~                                                                                                                       [9;1H~                                                                                                                       [10;1H~                                                                                                                       [11;1H~                                                                                                                       [12;1H~                                                                                                                       [13;1H~                                                                                                                       [14;1H~                                                                                                                       [15;1H~                                                                                                                       [16;1H~                                                                                                                       [17;1H~                                                                                                                       [18;1H~                                                                                                                       [19;1H~                                                                                                                       [20;1H~                                                                                                                       [21;1H~                                                                                                                       [22;1H~                                                                                                                       [23;1H~                                                                                                                       [24;1H~                                                                                                                       [25;1H~                                                                                                                       [26;1H~                                                                                                                       [27;1H~                                                                                                                       [28;1H~                                                                                                                       [29;1H~                                                                                                                       [m[30;103H0,0-1[9CAll[1;1H[?25h[?25l[30;93Hi[1;1H[30;93H [1;1H[30;1H[1m-- INSERT --[m[30;13H[K[30;103H0,1[11CAll[1;1H[?25h[?25lu[30;103H1,2[1;2H[?25h[?25l[1;1H[K[30;105H1[1;1H[?25h[?25lh[30;105H2[1;2H[?25h[?25le[30;105H3[1;3H[?25h[?25ll[30;105H4[1;4H[?25h[?25ll[30;105H5[1;5H[?25h[?25lo[30;105H6[1;6H[?25h[?25l[30;105H7[1;7H[?25h[?25lt[30;105H8[1;8H[?25h[?25lr[30;105H9[1;9H[?25h[?25ly[30;105H10[1;10H[?25h[?25li[30;106H1[1;11H[?25h[?25ln[30;106H2[1;12H[?25h[?25lg[30;106H3[1;13H[?25h[?25l[30;106H4[1;14H[?25h[?25lt[30;106H5[1;15H[?25h[?25lo[30;106H6[1;16H[?25h[?25l[30;106H7[1;17H[?25h[?25lm[30;106H8[1;18H[?25h[?25la[30;106H9[1;19H[?25h[?25lk[30;105H20[1;20H[?25h[?25le[30;106H1[1;21H[?25h[?25l[30;106H2[1;22H[?25h[?25lm[30;106H3[1;23H[?25h[?25l[1;22H[K[30;106H2[1;22H[?25h[?25la[30;106H3[1;23H[?25h[?25lm[30;106H4[1;24H[?25h[?25le[30;106H5[1;25H[?25h[?25ln[30;106H6[1;26H[?25h[?25ld[30;106H7[1;27H[?25h[?25ls[30;106H8[1;28H[?25h[?25l[30;106H9[1;29H[?25h[?25lt[30;105H30[1;30H[?25h[?25lo[30;106H1[1;31H[?25h[?25l[30;106H2[1;32H[?25h[?25lt[30;106H3[1;33H[?25h[?25lh[30;106H4[1;34H[?25h[?25le[30;106H5[1;35H[?25h[?25l[30;106H6[1;36H[?25h[?25lf[30;106H7[1;37H[?25h[?25li[30;106H8[1;38H[?25h[?25ll[30;106H9[1;39H[?25h[?25le[30;105H40[1;40H[?25h[?25l[2;1H[K[30;103H2,1 [2;1H[?25h[?25la[30;105H2[2;2H[?25h[?25ln[30;105H3[2;3H[?25h[?25ld[30;105H4[2;4H[?25h[?25l[30;105H5[2;5H[?25h[?25lf[30;105H6[2;6H[?25h[?25l[2;5H[K[30;105H5[2;5H[?25h[?25lo[30;105H6[2;6H[?25h[?25lb[30;105H7[2;7H[?25h[?25ls[30;105H8[2;8H[?25h[?25le[30;105H9[2;9H[?25h[?25lr[30;105H10[2;10H[?25h[?25lv[30;106H1[2;11H[?25h[?25le[30;106H2[2;12H[?25h[?25l[30;106H3[2;13H[?25h[?25lcv[30;106H5[2;15H[?25h[?25l[2;14H[K[30;106H4[2;14H[?25h[?25lh[30;106H5[2;15H[?25h[?25la[30;106H6[2;16H[?25h[?25ln[30;106H7[2;17H[?25h[?25lg[30;106H8[2;18H[?25h[?25le[30;106H9[2;19H[?25h[?25ls[30;105H20[2;20H[?25h[?25l[30;106H1[2;21H[?25h[?25li[30;106H2[2;22H[?25h[?25ln[30;106H3[2;23H[?25h[?25l[30;106H4[2;24H[?25h[?25lw[30;106H5[2;25H[?25h[?25lo[30;106H6[2;26H[?25h[?25lr[30;106H7[2;27H[?25h[?25ld[30;106H8[2;28H[?25h[?25l[30;106H9[2;29H[?25h[?25lc[30;105H30[2;30H[?25h[?25lo[30;106H1[2;31H[?25h[?25lu[30;106H2[2;32H[?25h[?25ln[30;106H3[2;33H[?25h[?25lt[30;106H4[2;34H[?25h[?25ls[30;106H5[2;35H[?25h[?25l[30;106H6[2;36H[?25h[?25l[3;1H[K[30;103H3,1 [3;1H[?25h[?25la[30;105H2[3;2H[?25h[?25ls[30;105H3[3;3H[?25h[?25l[30;105H4[3;4H[?25h[?25lw[30;105H5[3;5H[?25h[?25le[30;105H6[3;6H[?25h[?25ll[30;105H7[3;7H[?25h[?25ll[30;105H8[3;8H[?25h[?25l[30;105H9[3;9H[?25h[?25la[30;105H10[3;10H[?25h[?25ls[30;106H1[3;11H[?25h[?25l[30;106H2[3;12H[?25h[?25ll[30;106H3[3;13H[?25h[?25le[30;106H4[3;14H[?25h[?25ln[30;106H5[3;15H[?25h[?25lg[30;106H6[3;16H[?25h[?25lt[30;106H7[3;17H[?25h[?25lh[30;106H8[3;18H[?25h[?25l[30;106H9[3;19H[?25h[?25lf[30;105H20[3;20H[?25h[?25l[3;19H[K[30;105H19[3;19H[?25h[?25lo[30;105H20[3;20H[?25h[?25lf[30;106H1[3;21H[?25h[?25l[30;106H2[3;22H[?25h[?25lt[30;106H3[3;23H[?25h[?25lh[30;106H4[3;24H[?25h[?25le[30;106H5[3;25H[?25h[?25l[30;106H6[3;26H[?25h[?25lf[30;106H7[3;27H[?25h[?25li[30;106H8[3;28H[?25h[?25ll[30;106H9[3;29H[?25h[?25le[30;105H30[3;30H[?25h[?25l[4;1H[K[30;103H4,1 [4;1H[?25h[30;1H[K[4;1H[?25l[30;93H^[[4;1H[30;93H  [4;1H[30;103H4,0-1[9CAll[4;1H[?25h[?25l[30;93H:[4;1H[30;93H[K[30;1H:[?2004h[?25hqa[?25l[97m[41mE37: No write since last change[m
+[97m[41mE162: No write since last change for buffer "fructose.dat"[?2004h[m
+[32mPress ENTER or type command to continue[?25h[?25l[4;1H[m[1;1H[2L[1;1Hhello trying to make amends to the file
+and observe changes in word counts[30;1H[K[30;103H4,0-1[9CAll[4;1H[?25h[?25l[30;93H^[[4;1H[30;93H  [4;1H[30;93H^[[4;1H[30;93H  [4;1H[?25h[?25l[30;93H:[4;1H[30;93H[K[30;1H:[?2004h[?25hq[?25l[97m[41mE37: No write since last change (add ! to override)[?2004h[4;1H[m[30;103H4,0-1[9CAll[4;1H[?25h[?25l[30;93H^[[4;1H[30;93H  [4;1H[30;93H^[[4;1H[30;93H  [4;1H[?25h[?25l[30;93H:[4;1H[30;1H[K[30;1H:[?2004h[?25hq1[?25l[30;3H[K[30;3H[?25h![?25l[?2004l[23;2t[23;1t[30;1H[K[30;1H[?2004l[?1l>[?25h[>4;m[?1049l[23;0;0t(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre/project/data/raw[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre/project/data/raw[00m$ vim fructose.dat cat[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre/project/data/raw[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre/project/data/raw[00m$ cat fructose.dat vim[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?1049h[22;0;0t[>4;2m[?1h=[?2004h[1;30r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[30;1H"fructose.dat" 0L, 0C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[2;1H[94m~                                                                                                                       [3;1H~                                                                                                                       [4;1H~                                                                                                                       [5;1H~                                                                                                                       [6;1H~                                                                                                                       [7;1H~                                                                                                                       [8;1H~                                                                                                                       [9;1H~                                                                                                                       [10;1H~                                                                                                                       [11;1H~                                                                                                                       [12;1H~                                                                                                                       [13;1H~                                                                                                                       [14;1H~                                                                                                                       [15;1H~                                                                                                                       [16;1H~                                                                                                                       [17;1H~                                                                                                                       [18;1H~                                                                                                                       [19;1H~                                                                                                                       [20;1H~                                                                                                                       [21;1H~                                                                                                                       [22;1H~                                                                                                                       [23;1H~                                                                                                                       [24;1H~                                                                                                                       [25;1H~                                                                                                                       [26;1H~                                                                                                                       [27;1H~                                                                                                                       [28;1H~                                                                                                                       [29;1H~                                                                                                                       [m[30;103H0,0-1[9CAll[1;1H[?25h[?25l[30;93Hi[1;1H[30;93H [1;1H[30;1H[1m-- INSERT --[m[30;13H[K[30;103H0,1[11CAll[1;1H[?25h[?25lt[30;103H1,2[1;2H[?25h[?25lh[30;105H3[1;3H[?25h[?25li[30;105H4[1;4H[?25h[?25ls[30;105H5[1;5H[?25h[?25l[30;105H6[1;6H[?25h[?25li[30;105H7[1;7H[?25h[?25ls[30;105H8[1;8H[?25h[?25l[30;105H9[1;9H[?25h[?25lg[30;105H10[1;10H[?25h[?25le[30;106H1[1;11H[?25h[?25lt[30;106H2[1;12H[?25h[?25lt[30;106H3[1;13H[?25h[?25li[30;106H4[1;14H[?25h[?25ln[30;106H5[1;15H[?25h[?25lg[30;106H6[1;16H[?25h[?25l[30;106H7[1;17H[?25h[?25lr[30;106H8[1;18H[?25h[?25lo[30;106H9[1;19H[?25h[?25lg[30;105H20[1;20H[?25h[?25l[1;19H[K[30;105H19[1;19H[?25h[?25ld[30;105H20[1;20H[?25h[?25l[1;19H[K[30;105H19[1;19H[?25h[?25l[1;18H[K[30;106H8[1;18H[?25h[?25ld[30;106H9[1;19H[?25h[?25l[1;18H[K[30;106H8[1;18H[?25h[?25li[30;106H9[1;19H[?25h[?25ld[30;105H20[1;20H[?25h[?25li[30;106H1[1;21H[?25h[?25lx[30;106H2[1;22H[?25h[?25l[1;21H[K[30;106H1[1;21H[?25h[?25lc[30;106H2[1;22H[?25h[?25lu[30;106H3[1;23H[?25h[?25ll[30;106H4[1;24H[?25h[?25li[30;106H5[1;25H[?25h[?25l[1;24H[K[30;106H4[1;24H[?25h[?25lo[30;106H5[1;25H[?25h[?25lu[30;106H6[1;26H[?25h[?25ls[30;106H7[1;27H[?25h[30;1H[K[1;26H[?25l[30;93H^[[1;26H[30;93H  [1;27H[30;103H1,26[10CAll[1;26H[?25h[?25l[30;93H:[1;26H[30;93H[K[30;1H:[?2004h[?25hqa[?25l[97m[41mE37: No write since last change[m
+[97m[41mE162: No write since last change for buffer "fructose.dat"[?2004h[m
+[32mPress ENTER or type command to continue[?25h[?25l[1;26H[m[30;93H:[1;26H[30;1H[K[30;1H:[?2004h[?25hwq[?25l[?2004l"fructose.dat" 1L, 27C written[23;2t[23;1t
+[?2004l[?1l>[?25h[>4;m[?1049l[23;0;0t(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre/project/data/raw[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre/project/data/raw[00m$ vim fructose.dat cat[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+this is getting ridiculous
+(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre/project/data/raw[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre/project/data/raw[00m$ cat fructose.dat vim[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccat[C[C[C[C[C[C[C[C[C[C[C[C[C[Cvim[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccat[C[C[C[C[C[C[C[C[C[C[C[C[C[C[9Pwc *.dat
+ 1  4 27 fructose.dat
+ 0  0  0 sucrose.dat
+ 1  4 27 total
+(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre/project/data/raw[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre/project/data/raw[00m$ wc *.datcat fructose.dat vim[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccat[C[C[C[C[C[C[C[C[C[C[C[C[C[Cvim[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccat[C[C[C[C[C[C[C[C[C[C[C[C[C[C[9Pwc *.datvim fructose.datcat lengths.txt ls[Kwc -l *.dat > lengths.txt
+(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre/project/data/raw[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre/project/data/raw[00m$ cat lengths.txt 
+ 1 fructose.dat
+ 0 sucrose.dat
+ 1 total
+(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre/project/data/raw[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre/project/data/raw[00m$ wc [K[K[Ksort -n lengths.txt 
+ 0 sucrose.dat
+ 1 fructose.dat
+ 1 total
+(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre/project/data/raw[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre/project/data/raw[00m$ sort -n lengths.txt [1P[1P[1P
+ 0 sucrose.dat
+ 1 fructose.dat
+ 1 total
+(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre/project/data/raw[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre/project/data/raw[00m$ echo "This is awes[K[K[K[K[K[K[K[K[K[K[K[K[K[K This is awesome
+This is awesome
+(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre/project/data/raw[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre/project/data/raw[00m$ echo hello ?[K> testfile.txt
+(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre/project/data/raw[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre/project/data/raw[00m$ ls
+fructose.dat  lengths.txt  sucrose.dat  testfile.txt
+(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre/project/data/raw[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre/project/data/raw[00m$ cat testfile.txt 
+hello
+(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre/project/data/raw[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre/project/data/raw[00m$ echo hello >> testfile1.txt
+(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre/project/data/raw[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre/project/data/raw[00m$ echo hello >> testfile1.txt[10Pcat testfile.txt ls[K
+fructose.dat  lengths.txt  sucrose.dat  testfile.txt  testfile1.txt
+(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre/project/data/raw[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre/project/data/raw[00m$ cat testfile*.txt
+hello
+hello
+(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre/project/data/raw[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre/project/data/raw[00m$ cat testfile*.txtls[Kecho hello >> testfile1.txt[10Pcat testfile.txt ls[Kecho hello > testfile.txt
+(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre/project/data/raw[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre/project/data/raw[00m$ echo hello > testfile.txt[8Pcat testfile*.txtls[Kecho hello >> testfile1.txt
+(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre/project/data/raw[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre/project/data/raw[00m$ echo hello >> testfile1.txt[2P testfile.txt[8Pcat testfile*.txt
+hello
+hello
+hello
+(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre/project/data/raw[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre/project/data/raw[00m$ cat testfile*.txtecho hello >> testfile1.txt[2P testfile.txt[8Pcat testfile*.txt[1P.txt1.txt
+hello
+hello
+(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre/project/data/raw[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre/project/data/raw[00m$ cat testfile1.txt[1P.txt
+hello
+(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre/project/data/raw[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre/project/data/raw[00m$ exit
+exit
+
+Script done on 2023-01-18 14:47:01+05:30 [COMMAND_EXIT_CODE="0"]
+Script started on 2023-01-31 09:43:25+05:30 [TERM="xterm-256color" TTY="/dev/tty1" COLUMNS="120" LINES="30"]
+(base) ]0;sourav@TIGER02474: ~[01;32msourav@TIGER02474[00m:[01;34m~[00m$ ls
+[0m[01;34mTCE2023[0m  [01;34mminiconda3[0m  my_unix_session
+(base) ]0;sourav@TIGER02474: ~[01;32msourav@TIGER02474[00m:[01;34m~[00m$ cd TCE2023/
+(base) ]0;sourav@TIGER02474: ~/TCE2023[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023[00m$ ls
+[0m[01;34mnorth-pacific-gyre[0m
+(base) ]0;sourav@TIGER02474: ~/TCE2023[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023[00m$ cd [K[K[Kmkdir excer[K[K[Kercs[Kise-data
+(base) ]0;sourav@TIGER02474: ~/TCE2023[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023[00m$ cd exercise-data/
+(base) ]0;sourav@TIGER02474: ~/TCE2023/exercise-data[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/exercise-data[00m$ cat basilick[K[Kk.dat
+cat: basilik.dat: No such file or directory
+(base) ]0;sourav@TIGER02474: ~/TCE2023/exercise-data[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/exercise-data[00m$ vim basilik.date[K
+[?1049h[22;0;0t[>4;2m[?1h=[?2004h[1;30r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[30;1H"basilik.dat" [New File][2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[2;1H[94m~                                                                                                                       [3;1H~                                                                                                                       [4;1H~                                                                                                                       [5;1H~                                                                                                                       [6;1H~                                                                                                                       [7;1H~                                                                                                                       [8;1H~                                                                                                                       [9;1H~                                                                                                                       [10;1H~                                                                                                                       [11;1H~                                                                                                                       [12;1H~                                                                                                                       [13;1H~                                                                                                                       [14;1H~                                                                                                                       [15;1H~                                                                                                                       [16;1H~                                                                                                                       [17;1H~                                                                                                                       [18;1H~                                                                                                                       [19;1H~                                                                                                                       [20;1H~                                                                                                                       [21;1H~                                                                                                                       [22;1H~                                                                                                                       [23;1H~                                                                                                                       [24;1H~                                                                                                                       [25;1H~                                                                                                                       [26;1H~                                                                                                                       [27;1H~                                                                                                                       [28;1H~                                                                                                                       [29;1H~                                                                                                                       [m[30;103H0,0-1[9CAll[1;1H[?25h[?25l[30;93Hh[1;1H[30;93H [1;1H[?25h[?25l[30;93He[1;1H[30;93H [1;1H[?25h[?25l[30;93Hl[1;1H[30;93H [1;1H[?25h[?25l[30;93Hl[1;1H[30;93H [1;1H[?25h[?25l[30;93Hi[1;1H[30;93H [1;1H[30;1H[1m-- INSERT --[m[30;13H[K[30;103H0,1[11CAll[1;1H[?25h[?25lh[30;103H1,2[1;2H[?25h[?25le[30;105H3[1;3H[?25h[?25ll[30;105H4[1;4H[?25h[?25ll[30;105H5[1;5H[?25h[?25lo[30;105H6[1;6H[?25h[?25l[2;1H[K[30;103H2,1[2;1H[?25h[?25lt[30;105H2[2;2H[?25h[?25lh[30;105H3[2;3H[?25h[?25li[30;105H4[2;4H[?25h[?25ls[30;105H5[2;5H[?25h[?25l[30;105H6[2;6H[?25h[?25li[30;105H7[2;7H[?25h[?25ls[30;105H8[2;8H[?25h[?25l[30;105H9[2;9H[?25h[?25la[30;105H10[2;10H[?25h[?25l[30;106H1[2;11H[?25h[?25lt[30;106H2[2;12H[?25h[?25le[30;106H3[2;13H[?25h[?25ls[30;106H4[2;14H[?25h[?25lt[30;106H5[2;15H[?25h[?25l[30;106H6[2;16H[?25h[?25lt[30;106H7[2;17H[?25h[?25l[2;16H[K[30;106H6[2;16H[?25h[?25lf[30;106H7[2;17H[?25h[?25li[30;106H8[2;18H[?25h[?25ll[30;106H9[2;19H[?25h[?25le[30;105H20[2;20H[?25h[?25l[30;106H1[2;21H[?25h[?25l[3;1H[K[30;103H3,1 [3;1H[?25h[?25lC[30;105H2[3;2H[?25h[?25lL[30;105H3[3;3H[?25h[?25lA[30;105H4[3;4H[?25h[?25lS[30;105H5[3;5H[?25h[?25lS[30;105H6[3;6H[?25h[?25lI[30;105H7[3;7H[?25h[?25lF[30;105H8[3;8H[?25h[?25lI[30;105H9[3;9H[?25h[?25lC[30;105H10[3;10H[?25h[?25lA[30;106H1[3;11H[?25h[?25lT[30;106H2[3;12H[?25h[?25lI[30;106H3[3;13H[?25h[?25lO[30;106H4[3;14H[?25h[?25lN[30;106H5[3;15H[?25h[?25l:[30;106H6[3;16H[?25h[?25l[30;106H7[3;17H[?25h[?25lx[30;106H8[3;18H[?25h[?25ly[30;106H9[3;19H[?25h[?25lz[30;105H20[3;20H[?25h[30;1H[K[3;19H[?25l[30;93H^[[3;19H[30;93H  [3;20H[30;103H3,19[10CAll[3;19H[?25h[?25l[30;93H:[3;19H[30;93H[K[30;1H:[?2004h[?25hwq[?25l[?2004l"basilik.dat" [New] 3L, 47C written[23;2t[23;1t
+[?2004l[?1l>[?25h[>4;m[?1049l[23;0;0t(base) ]0;sourav@TIGER02474: ~/TCE2023/exercise-data[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/exercise-data[00m$ vim basilik.datcat[C[C[C[C[C[C[C[C[C[C[C[C
+hello
+this is a test file 
+CLASSIFICATION: xyz
+(base) ]0;sourav@TIGER02474: ~/TCE2023/exercise-data[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/exercise-data[00m$ vim minotaur.dat
+[?1049h[22;0;0t[>4;2m[?1h=[?2004h[1;30r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[30;1H"minotaur.dat" [New File][2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[2;1H[94m~                                                                                                                       [3;1H~                                                                                                                       [4;1H~                                                                                                                       [5;1H~                                                                                                                       [6;1H~                                                                                                                       [7;1H~                                                                                                                       [8;1H~                                                                                                                       [9;1H~                                                                                                                       [10;1H~                                                                                                                       [11;1H~                                                                                                                       [12;1H~                                                                                                                       [13;1H~                                                                                                                       [14;1H~                                                                                                                       [15;1H~                                                                                                                       [16;1H~                                                                                                                       [17;1H~                                                                                                                       [18;1H~                                                                                                                       [19;1H~                                                                                                                       [20;1H~                                                                                                                       [21;1H~                                                                                                                       [22;1H~                                                                                                                       [23;1H~                                                                                                                       [24;1H~                                                                                                                       [25;1H~                                                                                                                       [26;1H~                                                                                                                       [27;1H~                                                                                                                       [28;1H~                                                                                                                       [29;1H~                                                                                                                       [m[30;103H0,0-1[9CAll[1;1H[?25h[?25l[30;93Hh[1;1H[30;93H [1;1H[?25h[?25l[30;93He[1;1H[30;93H [1;1H[?25h[?25l[30;93Hy[1;1H[?25h[?25l[30;94Hi[1;1H[?25h[?25l[30;95H^[[1;1H[30;95H  [1;1H[30;95H^[[1;1H[30;93H    [1;1H[?25h[?25l[30;93Hh[1;1H[30;93H [1;1H[?25h[?25l[30;93H^[[1;1H[30;93H  [1;1H[30;93H^[[1;1H[30;93H  [1;1H[?25h[?25l[30;93Hi[1;1H[30;93H [1;1H[30;1H[1m-- INSERT --[m[30;13H[K[30;103H0,1[11CAll[1;1H[?25h[?25lh[30;103H1,2[1;2H[?25h[?25le[30;105H3[1;3H[?25h[?25ly[30;105H4[1;4H[?25h[?25l,[30;105H5[1;5H[?25h[?25l[2;1H[K[30;103H2,1[2;1H[?25h[?25lw[30;105H2[2;2H[?25h[?25le[30;105H3[2;3H[?25h[?25l[30;105H4[2;4H[?25h[?25la[30;105H5[2;5H[?25h[?25lr[30;105H6[2;6H[?25h[?25le[30;105H7[2;7H[?25h[?25l[30;105H8[2;8H[?25h[?25lb[30;105H9[2;9H[?25h[?25la[30;105H10[2;10H[?25h[?25lc[30;106H1[2;11H[?25h[?25lk[30;106H2[2;12H[?25h[?25l[30;106H3[2;13H[?25h[?25lt[30;106H4[2;14H[?25h[?25lo[30;106H5[2;15H[?25h[?25l[30;106H6[2;16H[?25h[?25la[30;106H7[2;17H[?25h[?25ln[30;106H8[2;18H[?25h[?25lo[30;106H9[2;19H[?25h[?25lt[30;105H20[2;20H[?25h[?25lh[30;106H1[2;21H[?25h[?25le[30;106H2[2;22H[?25h[?25lr[30;106H3[2;23H[?25h[?25l[30;106H4[2;24H[?25h[?25lt[30;106H5[2;25H[?25h[?25le[30;106H6[2;26H[?25h[?25ls[30;106H7[2;27H[?25h[?25lt[30;106H8[2;28H[?25h[?25l[30;106H9[2;29H[?25h[?25lf[30;105H30[2;30H[?25h[?25li[30;106H1[2;31H[?25h[?25ll[30;106H2[2;32H[?25h[?25le[30;106H3[2;33H[?25h[?25l[3;1H[K[30;103H3,1 [3;1H[?25h[?25lC[30;105H2[3;2H[?25h[?25lL[30;105H3[3;3H[?25h[?25lA[30;105H4[3;4H[?25h[?25lS[30;105H5[3;5H[?25h[?25lS[30;105H6[3;6H[?25h[?25lI[30;105H7[3;7H[?25h[?25lF[30;105H8[3;8H[?25h[?25lI[30;105H9[3;9H[?25h[?25lC[30;105H10[3;10H[?25h[?25lA[30;106H1[3;11H[?25h[?25lT[30;106H2[3;12H[?25h[?25lI[30;106H3[3;13H[?25h[?25lO[30;106H4[3;14H[?25h[?25lN[30;106H5[3;15H[?25h[?25l:[30;106H6[3;16H[?25h[?25l[30;106H7[3;17H[?25h[?25lm[30;106H8[3;18H[?25h[?25li[30;106H9[3;19H[?25h[?25ln[30;105H20[3;20H[?25h[?25lo[30;106H1[3;21H[?25h[?25lt[30;106H2[3;22H[?25h[?25la[30;106H3[3;23H[?25h[?25lu[30;106H4[3;24H[?25h[?25lr[30;106H5[3;25H[?25h[30;1H[K[3;24H[?25l[30;93H^[[3;24H[30;93H  [3;25H[30;103H3,24[10CAll[3;24H[?25h[?25l[30;93H:[3;24H[30;93H[K[30;1H:[?2004h[?25hwq[?25l[?2004l"minotaur.dat" [New] 3L, 63C written[23;2t[23;1t
+[?2004l[?1l>[?25h[>4;m[?1049l[23;0;0t(base) ]0;sourav@TIGER02474: ~/TCE2023/exercise-data[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/exercise-data[00m$ vim unicorn.dat
+[?1049h[22;0;0t[>4;2m[?1h=[?2004h[1;30r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[30;1H"unicorn.dat" [New File][2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[2;1H[94m~                                                                                                                       [3;1H~                                                                                                                       [4;1H~                                                                                                                       [5;1H~                                                                                                                       [6;1H~                                                                                                                       [7;1H~                                                                                                                       [8;1H~                                                                                                                       [9;1H~                                                                                                                       [10;1H~                                                                                                                       [11;1H~                                                                                                                       [12;1H~                                                                                                                       [13;1H~                                                                                                                       [14;1H~                                                                                                                       [15;1H~                                                                                                                       [16;1H~                                                                                                                       [17;1H~                                                                                                                       [18;1H~                                                                                                                       [19;1H~                                                                                                                       [20;1H~                                                                                                                       [21;1H~                                                                                                                       [22;1H~                                                                                                                       [23;1H~                                                                                                                       [24;1H~                                                                                                                       [25;1H~                                                                                                                       [26;1H~                                                                                                                       [27;1H~                                                                                                                       [28;1H~                                                                                                                       [29;1H~                                                                                                                       [m[30;103H0,0-1[9CAll[1;1H[?25h[?25l[30;93Hi[1;1H[30;93H [1;1H[30;1H[1m-- INSERT --[m[30;13H[K[30;103H0,1[11CAll[1;1H[?25h[?25lo[30;103H1,2[1;2H[?25h[?25lk[30;105H3[1;3H[?25h[?25l,[30;105H4[1;4H[?25h[?25l[30;105H5[1;5H[?25h[?25l[2;1H[K[30;103H2,1[2;1H[?25h[?25lI[30;105H2[2;2H[?25h[?25l[30;105H3[2;3H[?25h[?25lu[30;105H4[2;4H[?25h[?25ln[30;105H5[2;5H[?25h[?25ld[30;105H6[2;6H[?25h[?25le[30;105H7[2;7H[?25h[?25lr[30;105H8[2;8H[?25h[?25ls[30;105H9[2;9H[?25h[?25lt[30;105H10[2;10H[?25h[?25la[30;106H1[2;11H[?25h[?25ln[30;106H2[2;12H[?25h[?25ld[30;106H3[2;13H[?25h[?25l[3;1H[K[30;103H3,1 [3;1H[?25h[?25lC[30;105H2[3;2H[?25h[?25lL[30;105H3[3;3H[?25h[?25lA[30;105H4[3;4H[?25h[?25lS[30;105H5[3;5H[?25h[?25lS[30;105H6[3;6H[?25h[?25lI[30;105H7[3;7H[?25h[?25lF[30;105H8[3;8H[?25h[?25lI[30;105H9[3;9H[?25h[?25lC[30;105H10[3;10H[?25h[?25lA[30;106H1[3;11H[?25h[?25lT[30;106H2[3;12H[?25h[?25lI[30;106H3[3;13H[?25h[?25lN[30;106H4[3;14H[?25h[?25l[3;13H[K[30;106H3[3;13H[?25h[?25lO[30;106H4[3;14H[?25h[?25lN[30;106H5[3;15H[?25h[?25l:[30;106H6[3;16H[?25h[?25l[30;106H7[3;17H[?25h[?25lu[30;106H8[3;18H[?25h[?25ln[30;106H9[3;19H[?25h[?25li[30;105H20[3;20H[?25h[?25lc[30;106H1[3;21H[?25h[?25lo[30;106H2[3;22H[?25h[?25lr[30;106H3[3;23H[?25h[?25ln[30;106H4[3;24H[?25h[30;1H[K[3;23H[?25l[30;93H^[[3;23H[30;93H  [3;24H[30;103H3,23[10CAll[3;23H[?25h[?25l[30;93H^[[3;23H[30;93H  [3;23H[30;93H^[[3;23H[30;93H  [3;23H[?25h[?25l[30;93H:[3;23H[30;93H[K[30;1H:[?2004h[?25hwq[?25l[?2004l"unicorn.dat" [New] 3L, 42C written[23;2t[23;1t
+[?2004l[?1l>[?25h[>4;m[?1049l[23;0;0t(base) ]0;sourav@TIGER02474: ~/TCE2023/exercise-data[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/exercise-data[00m$ head -n 3 minotaur.dat [K[K[K[K[K[K[K[K[K[K[K[K[K*.dat
+==> basilik.dat <==
+hello
+this is a test file 
+CLASSIFICATION: xyz
+
+==> minotaur.dat <==
+hey,
+we are back to another test file
+CLASSIFICATION: minotaur
+
+==> unicorn.dat <==
+ok, 
+I understand
+CLASSIFICATION: unicorn
+(base) ]0;sourav@TIGER02474: ~/TCE2023/exercise-data[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/exercise-data[00m$ for filename in * [K.dat
+> do
+> head -n 3 $filename | tail -n 1
+> done
+CLASSIFICATION: xyz
+CLASSIFICATION: minotaur
+CLASSIFICATION: unicorn
+(base) ]0;sourav@TIGER02474: ~/TCE2023/exercise-data[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/exercise-data[00m$ for digit in [K 0 1 2 3 4 5 6 7 89[K 9
+> do [K
+> 
+Display all 6479 possibilities? (y or n)
+!
+./
+07409496-a423-4a3e-b620-2cfb01a9318d_HyperV-ComputeNetwork.dll
+2to3
+2to3-3.10
+69fe178f-26e7-43a9-aa7d-2b616b672dde_eventlogservice.dll
+6bea57fb-8dfb-4177-9ae8-42e8b3529933_RuntimeDeviceInstall.dll
+:
+@AdvancedKeySettingsNotification.png
+@AppHelpToast.png
+@AudioToastIcon.png
+@BackgroundAccessToastIcon.png
+@EnrollmentToastIcon.png
+@StorageSenseToastIcon.png
+@VpnToastIcon.png
+@WLOGO_48x48.png
+@WindowsHelloFaceToastIcon.png
+@WindowsUpdateToastIcon.contrast-black.png
+@WindowsUpdateToastIcon.contrast-white.png
+@WindowsUpdateToastIcon.png
+@WirelessDisplayToast.png
+@bitlockertoastimage.png
+@edptoastimage.png
+@language_notification_icon.png
+@optionalfeatures.png
+@windows-hello-V4.1.gif
+ACPBackgroundManagerPolicy.dll
+AJRouter.dll
+APHostClient.dll
+--More--[KAPHostRes.dll
+APHostService.dll
+APMon.dll
+APMonUI.dll
+ARP.EXE
+AUDIOKSE.dll
+AarSvc.dll
+AboutSettingsHandlers.dll
+AboveLockAppHost.dll
+AcGenral.dll
+AcLayers.dll
+AcSpecfc.dll
+AcWinRT.dll
+AcXtrnal.dll
+AccountsRt.dll
+ActionCenter.dll
+ActionCenterCPL.dll
+ActionQueue.dll
+ActivationClient.dll
+ActivationManager.dll
+ActivationVdev.dll
+ActiveHours.png
+ActiveSyncCsp.dll
+ActiveSyncProvider.dll
+AdaptiveCards.dll
+AddressParser.dll
+AdmTmpl.dll
+AdvancedEmojiDS.dll
+AgentService.exe
+--More--[K> echo ^C
+(base) ]0;sourav@TIGER02474: ~/TCE2023/exercise-data[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/exercise-data[00m$ for digit in 0 1 2 3 4 5 6 7 8 9; do[K[K[K[K
+> do
+> echo $digit
+> done
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+(base) ]0;sourav@TIGER02474: ~/TCE2023/exercise-data[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/exercise-data[00m$ for filename in *.dat
+> di[Ko
+> cat $filename >> all.dat
+> done
+(base) ]0;sourav@TIGER02474: ~/TCE2023/exercise-data[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/exercise-data[00m$ cat all.dat[K[K[K[K[K[K[K[K[K[K[Kls
+all.dat  basilik.dat  minotaur.dat  unicorn.dat
+(base) ]0;sourav@TIGER02474: ~/TCE2023/exercise-data[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/exercise-data[00m$ a[Kcat all.dat
+hello
+this is a test file 
+CLASSIFICATION: xyz
+hey,
+we are back to another test file
+CLASSIFICATION: minotaur
+ok, 
+I understand
+CLASSIFICATION: unicorn
+(base) ]0;sourav@TIGER02474: ~/TCE2023/exercise-data[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/exercise-data[00m$ echo hello, things are g[Kgoing d[Kgood
+hello, things are going good
+(base) ]0;sourav@TIGER02474: ~/TCE2023/exercise-data[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/exercise-data[00m$ cd ../
+(base) ]0;sourav@TIGER02474: ~/TCE2023[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023[00m$ ls
+[0m[01;34mexercise-data[0m  [01;34mnorth-pacific-gyre[0m
+(base) ]0;sourav@TIGER02474: ~/TCE2023[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023[00m$ c[Kls north-pacific-gyre/
+[0m[01;34mproject[0m  [01;34mthesis[0m
+(base) ]0;sourav@TIGER02474: ~/TCE2023[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023[00m$ ls north-pacific-gyre/project/data/
+[0m[01;34manalyzed[0m  [01;34mraw[0m
+(base) ]0;sourav@TIGER02474: ~/TCE2023[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023[00m$ ls north-pacific-gyre/project/data/raw/
+fructose.dat  lengths.txt  sucrose.dat  testfile.txt  testfile1.txt
+(base) ]0;sourav@TIGER02474: ~/TCE2023[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023[00m$ cat ls north-pacific-gyre/project/data/raw/[C[1P north-pacific-gyre/project/data/raw/[1P north-pacific-gyre/project/data/raw/c north-pacific-gyre/project/data/raw/a north-pacific-gyre/project/data/raw/t north-pacific-gyre/project/data/raw/
+cat: north-pacific-gyre/project/data/raw/: Is a directory
+(base) ]0;sourav@TIGER02474: ~/TCE2023[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023[00m$ cat north-pacific-gyre/project/data/raw/*
+this is getting ridiculous
+ 1 fructose.dat
+ 0 sucrose.dat
+ 1 total
+hello
+hello
+hello
+(base) ]0;sourav@TIGER02474: ~/TCE2023[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023[00m$ cd north-pacific-gyre/project/data
+(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre/project/data[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre/project/data[00m$ for datafile in raw[K[K[K*/*ose.dat
+> do
+> echo $datafile
+> done
+raw/fructose.dat
+raw/sucrose.dat
+(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre/project/data[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre/project/data[00m$ for datafile in */*se.dat
+> do [K
+> wecho[K[K[K[K[Kecho $datafile stats-$datafile
+> done
+raw/fructose.dat stats-raw/fructose.dat
+raw/sucrose.dat stats-raw/sucrose.dat
+(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre/project/data[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre/project/data[00m$ ls *\[K/
+analyzed/:
+
+raw/:
+fructose.dat  lengths.txt  sucrose.dat  testfile.txt  testfile1.txt
+(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre/project/data[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre/project/data[00m$ cd..
+cd..: command not found
+(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre/project/data[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre/project/data[00m$ to[K[Kcd ..
+(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre/project[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre/project[00m$ touch [K[K[K[K[K[Kls ../*
+../project:
+[0m[01;34mdata[0m  [01;34mresults[0m
+
+../thesis:
+quotations.txt  quotes.txt
+(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre/project[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre/project[00m$ touch sample_sh[Kcript.sh
+(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre/project[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre/project[00m$ vim d[Ksample_script.sh
+[?1049h[22;0;0t[>4;2m[?1h=[?2004h[1;30r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[30;1H"sample_script.sh" 0L, 0C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[2;1H[94m~                                                                                                                       [3;1H~                                                                                                                       [4;1H~                                                                                                                       [5;1H~                                                                                                                       [6;1H~                                                                                                                       [7;1H~                                                                                                                       [8;1H~                                                                                                                       [9;1H~                                                                                                                       [10;1H~                                                                                                                       [11;1H~                                                                                                                       [12;1H~                                                                                                                       [13;1H~                                                                                                                       [14;1H~                                                                                                                       [15;1H~                                                                                                                       [16;1H~                                                                                                                       [17;1H~                                                                                                                       [18;1H~                                                                                                                       [19;1H~                                                                                                                       [20;1H~                                                                                                                       [21;1H~                                                                                                                       [22;1H~                                                                                                                       [23;1H~                                                                                                                       [24;1H~                                                                                                                       [25;1H~                                                                                                                       [26;1H~                                                                                                                       [27;1H~                                                                                                                       [28;1H~                                                                                                                       [29;1H~                                                                                                                       [m[30;103H0,0-1[9CAll[1;1H[?25h[?25l[30;93Ht[1;1H[?25h[?25l[30;94Hi[1;1H[30;93H  [1;1H[?25h[?25l[30;93H^[[1;1H[30;93H  [1;1H[30;93H^[[1;1H[30;93H  [1;1H[?25h[?25l[30;93Hi[1;1H[30;93H [1;1H[30;1H[1m-- INSERT --[m[30;13H[K[30;103H0,1[11CAll[1;1H[?25h[?25lt[30;103H1,2[1;2H[?25h[?25la[30;105H3[1;3H[?25h[?25li[30;105H4[1;4H[?25h[?25l[38;5;130mtail[m[30;105H5[1;5H[?25h[?25l[30;105H6[1;6H[?25h[?25l-[30;105H7[1;7H[?25h[?25l[35m-n[m[30;105H8[1;8H[?25h[?25l[30;105H9[1;9H[?25h[?25l[31m2[m[30;105H10[1;10H[?25h[30;1H[K[1;9H[?25l[30;93H^[[1;9H[30;93H  [1;10H[30;103H1,9[11CAll[1;9H[?25h[?25l[30;93H:[1;9H[30;93H[K[30;1H:[?2004h[?25hwq[?25l[?2004l"sample_script.sh" 1L, 10C written[23;2t[23;1t
+[?2004l[?1l>[?25h[>4;m[?1049l[23;0;0t(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre/project[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre/project[00m$ bash sample_scirpt[K[K[K[Kript.sh
+^C
+(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre/project[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre/project[00m$ history
+    1  sudo apt get install git
+    2  sudo apt install git
+    3  bash Miniconda3-latest-Linux-x86_64.sh
+    4  pwd
+    5  bash Downloads/Miniconda3-latest-Linux-x86_64.sh
+    6  bash C:\Users\sourav.agarwal\Downloads\Miniconda3-latest-Linux-x86_64.sh
+    7  pwd
+    8  ls
+    9  ls -al
+   10  git init
+   11  git config --global user.name "agasourav"
+   12  git config --global user.email "sourav.agarwal@tigeranalytics.com"
+   13  git config --global --list
+   14  ls
+   15  pwd
+   16  cd TCE2023
+   17  ls -F
+   18  cd ..
+   19  ls -F
+   20  ls --help
+   21  man ls
+   22  ls -j
+   23  ls
+   24  ls -t
+   25  ls -r
+   26  ls -F -a
+   27  cd -
+   28  cd home
+   29  cd ~
+   30  ls pwd
+   31  ls -r
+   32  ls -s
+   33  cd TCE2023
+   34  mkdir north-pacific-gyre
+   35  ls
+   36  ls nor
+   37  ls north-pacific-gyre/
+   38  exit
+   39  conda deactivate
+   40  script -a ~/my_unix_session
+   41  ls 
+   42  cat my_unix_session 
+   43  exit
+   44  cd TCE2023/north-pacific-gyre/
+   45  mkdir thesis
+   46  cd thesis
+   47  mkdir -p ../project/data ../project/results
+   48  ls
+   49  cd ..
+   50  ls
+   51  ls project
+   52  ls -FR project
+   53  cd thesis
+   54  nano draft.txt
+   55  ls
+   56  nano draft.txt
+   57  ls
+   58  exit
+   59  ls
+   60  ls TCE2023/
+   61  script -a ~/my_unix_session
+   62  exit
+   63  ls
+   64  cd TCE2023/
+   65  ls
+   66  cd north-pacific-gyre/
+   67  touch my_file.txt
+   68  ls
+   69  rm my_file.txt
+   70  ls -r
+   71  ls -FR
+   72  mv thesis/draft.txt thesis/quotes.txt
+   73  ls -FR
+   74  mkdir -p project/data/analyzed project/data/raw
+   75  touch project/data/analyzed/fructose.dat project/data/analyzed/sucrose.dat
+   76  ls project/data
+   77  cd project/data/analyzed
+   78  ls
+   79  mv fructose.data sucrose.data ../raw
+   80  mv fructose.dat sucrose.dat ../raw
+   81  ls 
+   82  ls ../raw
+   83  cd 
+   84  cd TCE2023/north-pacific-gyre/
+   85  ls
+   86  cd thesis
+   87  cp quotes.txt quotations.txt
+   88  ls
+   89  cd ..
+   90  cp -r thesis thesis_backup
+   91  ls
+   92  ls thesis_backup/
+   93  rm thesis_backup/
+   94  rm -r thesis_backup/
+   95  ls
+   96  ls -r *.txt
+   97  ls -rF *.txt
+   98  ls -FR *.txt
+   99  ls -FR *.dat
+  100  cd project/
+  101  ls
+  102  ls data
+  103  ls raw
+  104  ls data/raw
+  105  ls data/raw/*.dat
+  106  ls data/raw/*rose.dat
+  107  ls data/raw/*ose.dat
+  108  ls data/raw/*uc*.dat
+  109  ls data/raw/*.da?
+  110  exit
+  111  ls
+  112  script -a ~/my_unix_session
+  113  exit
+  114  ls
+  115  cd TCE2023/
+  116  ks
+  117  ls
+  118  cd north-pacific-gyre/
+  119  ls
+  120  cd project/
+  121  ls
+  122  cd data
+  123  ls
+  124  cd raw
+  125  ls
+  126  wc fructose.dat 
+  127  wc *.dat
+  128  wc -l *.data > lengths.txt
+  129  wc -l *.dat > lengths.txt
+  130  ls
+  131  cat lengths.txt 
+  132  vim fructose.dat
+  133  wc *.dat
+  134  cat fructose.dat 
+  135  vim fructose.dat 
+  136  cat fructose.dat 
+  137  vim fructose.dat 
+  138  cat fructose.dat 
+  139  wc *.dat
+  140  wc -l *.dat > lengths.txt
+  141  cat lengths.txt 
+  142  sort -n lengths.txt 
+  143  sort lengths.txt 
+  144  echo This is awesome
+  145  echo hello > testfile.txt
+  146  ls
+  147  cat testfile.txt 
+  148  echo hello >> testfile1.txt
+  149  ls
+  150  cat testfile*.txt
+  151  echo hello > testfile.txt
+  152  echo hello >> testfile1.txt
+  153  cat testfile*.txt
+  154  cat testfile1.txt
+  155  cat testfile.txt
+  156  exit
+  157  script -a ~/my_unix_session 
+  158  exit
+  159  ls
+  160  cd TCE2023/
+  161  ls
+  162  mkdir exercise-data
+  163  cd exercise-data/
+  164  cat basilik.dat
+  165  vim basilik.dat
+  166  cat basilik.dat
+  167  vim minotaur.dat
+  168  vim unicorn.dat
+  169  head -n 3 *.dat
+  170  for filename in *.dat; do head -n 3 $filename | tail -n 1; done
+  171  for digit in 0 1 2 3 4 5 6 7 8 9; do
+  172  for digit in 0 1 2 3 4 5 6 7 8 9; do echo $digit; done
+  173  for filename in *.dat; do cat $filename >> all.dat; done
+  174  ls
+  175  cat all.dat
+  176  echo hello, things are going good
+  177  cd ../
+  178  ls
+  179  ls north-pacific-gyre/
+  180  ls north-pacific-gyre/project/data/
+  181  ls north-pacific-gyre/project/data/raw/
+  182  cat north-pacific-gyre/project/data/raw/
+  183  cat north-pacific-gyre/project/data/raw/*
+  184  cd north-pacific-gyre/project/data
+  185  for datafile in */*ose.dat; do echo $datafile; done
+  186  for datafile in */*se.dat; do echo $datafile stats-$datafile; done
+  187  ls */
+  188  cd..
+  189  cd ..
+  190  ls ../*
+  191  touch sample_script.sh
+  192  vim sample_script.sh
+  193  bash sample_script.sh
+  194  history
+(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre/project[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre/project[00m$ history | tail -n 5
+  191  touch sample_script.sh
+  192  vim sample_script.sh
+  193  bash sample_script.sh
+  194  history
+  195  history | tail -n 5
+(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre/project[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre/project[00m$ history | tail -n 5[K10[K[K10
+  187  ls */
+  188  cd..
+  189  cd ..
+  190  ls ../*
+  191  touch sample_script.sh
+  192  vim sample_script.sh
+  193  bash sample_script.sh
+  194  history
+  195  history | tail -n 5
+  196  history | tail -n 10
+(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre/project[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre/project[00m$ history | tail -n 10[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K!190
+ls ../*
+../project:
+[0m[01;34mdata[0m  [01;34mresults[0m  sample_script.sh
+
+../thesis:
+quotations.txt  quotes.txt
+(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre/project[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre/project[00m$ for species in unicorn m[K[K[K[K[K[K[K[K[Kcubane ehta[K[K[Kthan [Ke methane
+> do [K
+> for temp in [K[K[K[Kerature in 25 30 450 80
+> do
+> mkdir spo[K[K[K$specif[Kes-$temperatr[Kure
+> done
+> done
+(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre/project[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre/project[00m$ ls
+[0m[01;34mcubane-25[0m  [01;34mcubane-450[0m  [01;34mdata[0m       [01;34methane-30[0m   [01;34methane-80[0m   [01;34mmethane-30[0m   [01;34mmethane-80[0m  sample_script.sh
+[01;34mcubane-30[0m  [01;34mcubane-80[0m   [01;34methane-25[0m  [01;34methane-450[0m  [01;34mmethane-25[0m  [01;34mmethane-450[0m  [01;34mresults[0m
+(base) ]0;sourav@TIGER02474: ~/TCE2023/north-pacific-gyre/project[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/north-pacific-gyre/project[00m$ exit
+exit
+
+Script done on 2023-01-31 10:50:03+05:30 [COMMAND_EXIT_CODE="0"]
+Script started on 2023-02-20 10:43:30+05:30 [TERM="xterm-256color" TTY="/dev/tty1" COLUMNS="120" LINES="30"]
+(base) ]0;sourav@TIGER02474: ~[01;32msourav@TIGER02474[00m:[01;34m~[00m$ ls
+[0m[01;34mTCE2023[0m  [01;34mminiconda3[0m  my_git_session  my_unix_session
+(base) ]0;sourav@TIGER02474: ~[01;32msourav@TIGER02474[00m:[01;34m~[00m$ v[Kcd TCE2023/
+(base) ]0;sourav@TIGER02474: ~/TCE2023[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023[00m$ ls
+[0m[01;34mexercise-data[0m  [01;34mlgit[0m  [01;34mnorth-pacific-gyre[0m  [01;34mtest_project_3147[0m
+(base) ]0;sourav@TIGER02474: ~/TCE2023[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023[00m$ ls -lr exercise-data/
+total 0
+-rw-r--r-- 1 sourav sourav  42 Jan 31 10:33 unicorn.dat
+-rw-r--r-- 1 sourav sourav  63 Jan 31 10:32 minotaur.dat
+-rw-r--r-- 1 sourav sourav  47 Jan 31 10:32 basilik.dat
+-rw-r--r-- 1 sourav sourav 152 Jan 31 10:38 all.dat
+(base) ]0;sourav@TIGER02474: ~/TCE2023[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023[00m$ cat r[Kexercise-data/v[Kbasilik.dat 
+hello
+this is a test file 
+CLASSIFICATION: xyz
+(base) ]0;sourav@TIGER02474: ~/TCE2023[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023[00m$ head -n 5 c[Kexercise-data/basilik.dat exercise-data/mo[Kinotaur.dat 
+==> exercise-data/basilik.dat <==
+hello
+this is a test file 
+CLASSIFICATION: xyz
+
+==> exercise-data/minotaur.dat <==
+hey,
+we are back to another test file
+CLASSIFICATION: minotaur
+(base) ]0;sourav@TIGER02474: ~/TCE2023[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023[00m$ for filename in basisi[K[Klic.da[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kcd exercise-data/
+(base) ]0;sourav@TIGER02474: ~/TCE2023/exercise-data[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/exercise-data[00m$ for i[Kfilename in *.data
+> do [K
+> ^C
+
+(base) ]0;sourav@TIGER02474: ~/TCE2023/exercise-data[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/exercise-data[00m$ for filename in *.data; do[K[K[K[K
+> od[K[Kdo
+> echo $filename
+> head -n 2 $filename | tail -n 1
+> done
+*.data
+head: cannot open '*.data' for reading: No such file or directory
+(base) ]0;sourav@TIGER02474: ~/TCE2023/exercise-data[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/exercise-data[00m$ for filename in *.data; do echo $filename; head -n 2 $filename | tail -n 1; done[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C; do echo $filename; head -n 2 $filename | tail -n[1P[A(base) ]0;sourav@TIGER02474: ~/TCE2023/exercise-data[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/exercise-data[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C do echo $filename; head -n 2 $filename | tail -n [1P[A(base) ]0;sourav@TIGER02474: ~/TCE2023/exercise-data[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/exercise-data[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+bash: syntax error near unexpected token `head'
+(base) ]0;sourav@TIGER02474: ~/TCE2023/exercise-data[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/exercise-data[00m$ fil[K[Kor r[Kfilename in *.dat
+> do
+> echo $filename
+> head -n 2 $filename | tail -n 1
+> done
+all.dat
+this is a test file 
+basilik.dat
+this is a test file 
+minotaur.dat
+we are back to another test file
+unicorn.dat
+I understand
+(base) ]0;sourav@TIGER02474: ~/TCE2023/exercise-data[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/exercise-data[00m$ for datafile in *.datm*.dat[C[C[C[C[C
+> do
+> echo $filename
+> ^C
+(base) ]0;sourav@TIGER02474: ~/TCE2023/exercise-data[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/exercise-data[00m$ for datafile in m*.dat; do echo $filename[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K
+> f[Kdo [K
+> echo $datafile
+> echo "cat $datafile"[K >> new.data"[K[K"
+> done
+minotaur.dat
+cat minotaur.dat >> new.dat
+(base) ]0;sourav@TIGER02474: ~/TCE2023/exercise-data[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/exercise-data[00m$ ls
+all.dat  basilik.dat  minotaur.dat  unicorn.dat
+(base) ]0;sourav@TIGER02474: ~/TCE2023/exercise-data[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/exercise-data[00m$ fr[Kor datafile in m*.dat
+> do
+> echo cat $datafile >> ne.[Kw.data[K
+> done
+(base) ]0;sourav@TIGER02474: ~/TCE2023/exercise-data[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/exercise-data[00m$ ls
+all.dat  basilik.dat  minotaur.dat  new.dat  unicorn.dat
+(base) ]0;sourav@TIGER02474: ~/TCE2023/exercise-data[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/exercise-data[00m$ v[Kcat new.dat
+cat minotaur.dat
+(base) ]0;sourav@TIGER02474: ~/TCE2023/exercise-data[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/exercise-data[00m$ cat minotaur.dat 
+hey,
+we are back to another test file
+CLASSIFICATION: minotaur
+(base) ]0;sourav@TIGER02474: ~/TCE2023/exercise-data[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/exercise-data[00m$ catm[K middle.sh
+cat: middle.sh: No such file or directory
+(base) ]0;sourav@TIGER02474: ~/TCE2023/exercise-data[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/exercise-data[00m$ touch [K[K[K[K[K[Kvim middle.sh
+[?1049h[22;0;0t[>4;2m[?1h=[?2004h[1;30r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[30;1H"middle.sh" [New File][2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[2;1H[94m~                                                                                                                       [3;1H~                                                                                                                       [4;1H~                                                                                                                       [5;1H~                                                                                                                       [6;1H~                                                                                                                       [7;1H~                                                                                                                       [8;1H~                                                                                                                       [9;1H~                                                                                                                       [10;1H~                                                                                                                       [11;1H~                                                                                                                       [12;1H~                                                                                                                       [13;1H~                                                                                                                       [14;1H~                                                                                                                       [15;1H~                                                                                                                       [16;1H~                                                                                                                       [17;1H~                                                                                                                       [18;1H~                                                                                                                       [19;1H~                                                                                                                       [20;1H~                                                                                                                       [21;1H~                                                                                                                       [22;1H~                                                                                                                       [23;1H~                                                                                                                       [24;1H~                                                                                                                       [25;1H~                                                                                                                       [26;1H~                                                                                                                       [27;1H~                                                                                                                       [28;1H~                                                                                                                       [29;1H~                                                                                                                       [m[30;103H0,0-1[9CAll[1;1H[?25h[?25l[30;93Hi[1;1H[30;93H [1;1H[30;1H[1m-- INSERT --[m[30;13H[K[30;103H0,1[11CAll[1;1H[?25h[?25lh[30;103H1,2[1;2H[?25h[?25le[30;105H3[1;3H[?25h[?25la[30;105H4[1;4H[?25h[?25ld[30;105H5[1;5H[?25h[?25l[30;105H6[1;6H[?25h[?25l-[30;105H7[1;7H[?25h[?25l[35m-n[m[30;105H8[1;8H[?25h[?25l[30;105H9[1;9H[?25h[?25l[31m1[m[30;105H10[1;10H[?25h[?25l[31m5[m[30;106H1[1;11H[?25h[?25l[30;106H2[1;12H[?25h[?25lm[30;106H3[1;13H[?25h[?25l*[30;106H4[1;14H[?25h[?25l.[30;106H5[1;15H[?25h[?25ld[30;106H6[1;16H[?25h[?25la[30;106H7[1;17H[?25h[?25lt[30;106H8[1;18H[?25h[?25l[30;106H9[1;19H[?25h[?25l|[30;105H20[1;20H[?25h[?25l[30;106H1[1;21H[?25h[?25lt[30;106H2[1;22H[?25h[?25la[30;106H3[1;23H[?25h[?25li[30;106H4[1;24H[?25h[?25l[38;5;130mtail[m[30;106H5[1;25H[?25h[?25l[30;106H6[1;26H[?25h[?25l-[30;106H7[1;27H[?25h[?25l[35m-n[m[30;106H8[1;28H[?25h[?25l[30;106H9[1;29H[?25h[?25l[31m2[m[30;105H30[1;30H[?25h[?25l[30;105H29[1;29H[?25h[?25l[30;106H8[1;28H[?25h[?25l[30;106H7[1;27H[?25h[?25l[30;106H6[1;26H[?25h[?25l[30;106H5[1;25H[?25h[?25l[30;106H4[1;24H[?25h[?25l[30;106H3[1;23H[?25h[?25l[30;106H2[1;22H[?25h[?25l[30;106H1[1;21H[?25h[?25l[30;106H0[1;20H[?25h[?25l[30;106H1[1;21H[?25h[?25l[30;106H2[1;22H[?25h[?25l[30;106H3[1;23H[?25h[?25l[30;106H4[1;24H[?25h[?25l[30;106H5[1;25H[?25h[?25l[30;106H6[1;26H[?25h[?25l[30;106H7[1;27H[?25h[?25l[30;106H8[1;28H[?25h[?25l[30;106H9[1;29H[?25h[?25l[30;105H30[1;30H[?25h[?25l[2;1H[K[30;103H2,1 [2;1H[?25h[30;1H[K[2;1H[?25l[30;93H^[[2;1H[30;93H  [2;1H[30;103H2,0-1[9CAll[2;1H[?25h[?25l[30;93H:[2;1H[30;93H[K[30;1H:[?2004h[?25hwq[?25l[?2004l"middle.sh" [New] 2L, 31C written[23;2t[23;1t
+[?2004l[?1l>[?25h[>4;m[?1049l[23;0;0t(base) ]0;sourav@TIGER02474: ~/TCE2023/exercise-data[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/exercise-data[00m$ catvim middle.shcat[C[C[C[C[C[C[C[C[C[C
+head -n 15 m*.dat | tail -n 2
+
+(base) ]0;sourav@TIGER02474: ~/TCE2023/exercise-data[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/exercise-data[00m$ bash middle.sh 
+we are back to another test file
+CLASSIFICATION: minotaur
+(base) ]0;sourav@TIGER02474: ~/TCE2023/exercise-data[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/exercise-data[00m$ bash middle.sh [2Pcat middle.shvim[C[C[C[C[C[C[C[C[C[C
+[?1049h[22;0;0t[>4;2m[?1h=[?2004h[1;30r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[30;1H"middle.sh" 2L, 31C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1Hhead [35m-n[m [31m15[m m*.dat | [38;5;130mtail[m [35m-n[m [31m2[m
+
+[94m~                                                                                                                       [4;1H~                                                                                                                       [5;1H~                                                                                                                       [6;1H~                                                                                                                       [7;1H~                                                                                                                       [8;1H~                                                                                                                       [9;1H~                                                                                                                       [10;1H~                                                                                                                       [11;1H~                                                                                                                       [12;1H~                                                                                                                       [13;1H~                                                                                                                       [14;1H~                                                                                                                       [15;1H~                                                                                                                       [16;1H~                                                                                                                       [17;1H~                                                                                                                       [18;1H~                                                                                                                       [19;1H~                                                                                                                       [20;1H~                                                                                                                       [21;1H~                                                                                                                       [22;1H~                                                                                                                       [23;1H~                                                                                                                       [24;1H~                                                                                                                       [25;1H~                                                                                                                       [26;1H~                                                                                                                       [27;1H~                                                                                                                       [28;1H~                                                                                                                       [29;1H~                                                                                                                       [m[30;103H2,0-1[9CAll[2;1H[?25h[?25l[30;93H~@k[2;1H[30;93H   [1;1H[30;103H1,1  [1;1H[?25h[?25l[30;93H~@k[1;1H[30;93H   [1;2H[30;105H2[1;2H[?25h[?25l[30;93H~@k[1;2H[30;93H   [1;3H[30;105H3[1;3H[?25h[?25l[30;93H~@k[1;3H[30;93H   [1;4H[30;105H4[1;4H[?25h[?25l[30;93H~@k[1;4H[30;93H   [1;5H[30;105H5[1;5H[?25h[?25l[30;93H~@k[1;5H[30;93H   [1;6H[30;105H6[1;6H[?25h[?25l[30;93H~@k[1;6H[30;93H   [1;7H[30;105H7[1;7H[?25h[?25l[30;93H~@k[1;7H[30;93H   [1;8H[30;105H8[1;8H[?25h[?25l[30;93H~@k[1;8H[30;93H   [1;9H[30;105H9[1;9H[?25h[?25l[30;93H~@k[1;9H[30;93H   [1;10H[30;105H10[1;10H[?25h[?25l[30;93H~@k[1;10H[30;93H   [1;11H[30;106H1[1;11H[?25h[?25l[30;93H~@k[1;11H[30;93H   [1;12H[30;106H2[1;12H[?25h[?25l[30;93H~@k[1;12H[30;93H   [1;13H[30;106H3[1;13H[?25h[?25l[30;93H~@k[1;13H[30;93H   [1;14H[30;106H4[1;14H[?25h[?25l[30;93H~@k[1;14H[30;93H   [1;15H[30;106H5[1;15H[?25h[?25l[30;93H~@k[1;15H[30;93H   [1;16H[30;106H6[1;16H[?25h[?25l[30;93H~@k[1;16H[30;93H   [1;17H[30;106H7[1;17H[?25h[?25l[30;93H~@k[1;17H[30;93H   [1;18H[30;106H8[1;18H[?25h[?25l[30;93H~@k[1;18H[30;93H   [1;17H[30;106H7[1;17H[?25h[?25l[30;93H~@k[1;17H[30;93H   [1;16H[30;106H6[1;16H[?25h[?25l[30;93H~@k[1;16H[30;93H   [1;15H[30;106H5[1;15H[?25h[?25l[30;93H~@k[1;15H[30;93H   [1;16H[30;106H6[1;16H[?25h[?25l[30;93H~@k[1;16H[30;93H   [1;17H[30;106H7[1;17H[?25h[?25l[30;93H~@k[1;17H[30;93H   [1;18H[30;106H8[1;18H[?25h[?25l[30;93Hi[1;18H[30;93H [1;18H[30;1H[1m-- INSERT --[m[30;13H[K[30;103H1,18[10CAll[1;18H[?25h[?25l | [38;5;130mtail[m [35m-n[m [31m2[m[1;29H[K[30;106H7[1;17H[?25h[?25l | [38;5;130mtail[m [35m-n[m [31m2[m[1;28H[K[30;106H6[1;16H[?25h[?25l | [38;5;130mtail[m [35m-n[m [31m2[m[1;27H[K[30;106H5[1;15H[?25h[?25l | [38;5;130mtail[m [35m-n[m [31m2[m[1;26H[K[30;106H4[1;14H[?25h[?25l | [38;5;130mtail[m [35m-n[m [31m2[m[1;25H[K[30;106H3[1;13H[?25h[?25l | [38;5;130mtail[m [35m-n[m [31m2[m[1;24H[K[30;106H2[1;12H[?25h[?25l$ | [38;5;130mtail[m [35m-n[m [31m2[m[30;106H3[1;13H[?25h[?25l[35m$1[m | [38;5;130mtail[m [35m-n[m [31m2[m[30;106H4[1;14H[?25h[?25l[30;106H3[1;13H[?25h[?25l[30;106H2[1;12H[?25h[?25l[38;5;130m"[m[35m$1[m[31m | tail -n 2[m[30;106H3[1;13H[?25h[?25l[30;106H4[1;14H[?25h[?25l[30;106H5[1;15H[?25h[?25l[38;5;130m"[m | [38;5;130mtail[m [35m-n[m [31m2[m[30;106H6[1;16H[?25h[30;1H[K[1;15H[?25l[30;93H^[[1;15H[30;93H  [1;16H[30;103H1,15[10CAll[1;15H[?25h[?25l[30;93H:[1;15H[30;93H[K[30;1H:[?2004h[?25hwq[?25l[?2004l"middle.sh" 2L, 29C written[23;2t[23;1t
+[?2004l[?1l>[?25h[>4;m[?1049l[23;0;0t(base) ]0;sourav@TIGER02474: ~/TCE2023/exercise-data[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/exercise-data[00m$ ls
+all.dat  basilik.dat  middle.sh  minotaur.dat  new.dat  unicorn.dat
+(base) ]0;sourav@TIGER02474: ~/TCE2023/exercise-data[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/exercise-data[00m$ bash middle.sh basilik.dat 
+this is a test file 
+CLASSIFICATION: xyz
+(base) ]0;sourav@TIGER02474: ~/TCE2023/exercise-data[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/exercise-data[00m$ bash middle.sh basilik.dat ls[Kvim middle.sh
+[?1049h[22;0;0t[>4;2m[?1h=[?2004h[1;30r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[30;1H"middle.sh" 2L, 29C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1Hhead [35m-n[m [31m15[m [38;5;130m"[m[35m$1[m[38;5;130m"[m | [38;5;130mtail[m [35m-n[m [31m2[m
+
+[94m~                                                                                                                       [4;1H~                                                                                                                       [5;1H~                                                                                                                       [6;1H~                                                                                                                       [7;1H~                                                                                                                       [8;1H~                                                                                                                       [9;1H~                                                                                                                       [10;1H~                                                                                                                       [11;1H~                                                                                                                       [12;1H~                                                                                                                       [13;1H~                                                                                                                       [14;1H~                                                                                                                       [15;1H~                                                                                                                       [16;1H~                                                                                                                       [17;1H~                                                                                                                       [18;1H~                                                                                                                       [19;1H~                                                                                                                       [20;1H~                                                                                                                       [21;1H~                                                                                                                       [22;1H~                                                                                                                       [23;1H~                                                                                                                       [24;1H~                                                                                                                       [25;1H~                                                                                                                       [26;1H~                                                                                                                       [27;1H~                                                                                                                       [28;1H~                                                                                                                       [29;1H~                                                                                                                       [m[30;103H1,15[10CAll[1;15H[?25h[?25l[30;93Hi[1;15H[30;93H [1;15H[30;1H[1m-- INSERT --[m[30;13H[K[30;103H1,15[10CAll[1;15H[?25h[?25l[30;106H4[1;14H[?25h[?25l[30;106H3[1;13H[?25h[?25l[30;106H2[1;12H[?25h[?25l[30;106H1[1;11H[?25h[?25l[30;106H0[1;10H[?25h[?25l[30;106H1[1;11H[?25h[?25l [38;5;130m"[m[35m$1[m[38;5;130m"[m | [38;5;130mtail[m [35m-n[m [31m2[m[1;27H[K[30;106H0[1;10H[?25h[?25l [38;5;130m"[m[35m$1[m[38;5;130m"[m | [38;5;130mtail[m [35m-n[m [31m2[m[1;26H[K[30;105H9 [1;9H[?25h[?25l$ [38;5;130m"[m[35m$1[m[38;5;130m"[m | [38;5;130mtail[m [35m-n[m [31m2[m[30;105H10[1;10H[?25h[?25l[35m$1[m [38;5;130m"[m[35m$1[m[38;5;130m"[m | [38;5;130mtail[m [35m-n[m [31m2[m[30;106H1[1;11H[?25h[?25l[30;106H2[1;12H[?25h[?25l[30;106H3[1;13H[?25h[?25l[30;106H4[1;14H[?25h[?25l[30;106H5[1;15H[?25h[?25l[31m$[m[38;5;130m"[m | [38;5;130mtail[m [35m-n[m [31m2[m[1;27H[K[30;106H4[1;14H[?25h[?25l[35m$2[m[38;5;130m"[m | [38;5;130mtail[m [35m-n[m [31m2[m[30;106H5[1;15H[?25h[?25l[30;106H6[1;16H[?25h[?25l[30;106H7[1;17H[?25h[?25l[30;106H8[1;18H[?25h[?25l[30;106H9[1;19H[?25h[?25l[30;105H20[1;20H[?25h[?25l[30;106H1[1;21H[?25h[?25l[30;106H2[1;22H[?25h[?25l[30;106H3[1;23H[?25h[?25l[30;106H4[1;24H[?25h[?25l[30;106H5[1;25H[?25h[?25l[30;106H6[1;26H[?25h[?25l[30;106H7[1;27H[?25h[?25l[30;106H8[1;28H[?25h[?25l[1;27H[K[30;106H7[1;27H[?25h[?25l$[30;106H8[1;28H[?25h[?25l[35m$3[m[30;106H9[1;29H[?25h[30;1H[K[1;28H[?25l[30;93H^[[1;28H[30;93H  [1;29H[30;103H1,28[10CAll[1;28H[?25h[?25l[30;93H:[1;28H[30;93H[K[30;1H:[?2004h[?25hwq[?25l[?2004l"middle.sh" 2L, 30C written[23;2t[23;1t
+[?2004l[?1l>[?25h[>4;m[?1049l[23;0;0t(base) ]0;sourav@TIGER02474: ~/TCE2023/exercise-data[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/exercise-data[00m$ vim middle.shbash middle.sh basilik.dat [1@3[1@ [C[C[C[C[C[C[C[C[C[C[C[C[C1
+CLASSIFICATION: xyz
+(base) ]0;sourav@TIGER02474: ~/TCE2023/exercise-data[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/exercise-data[00m$ bash middle.sh 3 basilik.dat 1[17Pvim middle.sh
+[?1049h[22;0;0t[>4;2m[?1h=[?2004h[1;30r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[30;1H"middle.sh" 2L, 30C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1Hhead [35m-n[m [35m$1[m [38;5;130m"[m[35m$2[m[38;5;130m"[m | [38;5;130mtail[m [35m-n[m [35m$3[m
+
+[94m~                                                                                                                       [4;1H~                                                                                                                       [5;1H~                                                                                                                       [6;1H~                                                                                                                       [7;1H~                                                                                                                       [8;1H~                                                                                                                       [9;1H~                                                                                                                       [10;1H~                                                                                                                       [11;1H~                                                                                                                       [12;1H~                                                                                                                       [13;1H~                                                                                                                       [14;1H~                                                                                                                       [15;1H~                                                                                                                       [16;1H~                                                                                                                       [17;1H~                                                                                                                       [18;1H~                                                                                                                       [19;1H~                                                                                                                       [20;1H~                                                                                                                       [21;1H~                                                                                                                       [22;1H~                                                                                                                       [23;1H~                                                                                                                       [24;1H~                                                                                                                       [25;1H~                                                                                                                       [26;1H~                                                                                                                       [27;1H~                                                                                                                       [28;1H~                                                                                                                       [29;1H~                                                                                                                       [m[30;103H1,28[10CAll[1;28H[?25h[?25l[30;93H~@k[1;28H[30;93H   [1;28H[?25h[?25l[30;93H~@k[1;28H[30;93H   [1;27H[30;106H7[1;27H[?25h[?25l[30;93H~@k[1;27H[30;93H   [1;26H[30;106H6[1;26H[?25h[?25l[30;93H~@k[1;26H[30;93H   [1;25H[30;106H5[1;25H[?25h[?25l[30;93H~@k[1;25H[30;93H   [1;24H[30;106H4[1;24H[?25h[?25l[30;93H~@k[1;24H[30;93H   [1;23H[30;106H3[1;23H[?25h[?25l[30;93H~@k[1;23H[30;93H   [1;22H[30;106H2[1;22H[?25h[?25l[30;93H~@k[1;22H[30;93H   [1;21H[30;106H1[1;21H[?25h[?25l[30;93H~@k[1;21H[30;93H   [1;20H[30;106H0[1;20H[?25h[?25l[30;93H~@k[1;20H[30;93H   [1;19H[30;105H19[1;19H[?25h[?25l[30;93H~@k[1;19H[30;93H   [1;18H[30;106H8[1;18H[?25h[?25l[30;93H~@k[1;18H[30;93H   [1;17H[30;106H7[1;17H[?25h[?25l[30;93H~@k[1;17H[30;93H   [1;16H[30;106H6[1;16H[?25h[?25l[30;93H~@k[1;16H[30;93H   [1;15H[30;106H5[1;15H[?25h[?25l[30;93H~@k[1;15H[30;93H   [1;14H[30;106H4[1;14H[?25h[?25l[30;93H~@k[1;14H[30;93H   [1;13H[30;106H3[1;13H[?25h[?25l[30;93H~@k[1;13H[30;93H   [1;12H[30;106H2[1;12H[?25h[?25l[30;93H~@k[1;12H[30;93H   [1;11H[30;106H1[1;11H[?25h[?25l[30;93H~@k[1;11H[30;93H   [1;10H[30;106H0[1;10H[?25h[?25l[30;93H~@k[1;10H[30;93H   [1;9H[30;105H9 [1;9H[?25h[?25l[30;93H~@k[1;9H[30;93H   [1;8H[30;105H8[1;8H[?25h[?25l[30;93H~@k[1;8H[30;93H   [1;7H[30;105H7[1;7H[?25h[?25l[30;93H~@k[1;7H[30;93H   [1;6H[30;105H6[1;6H[?25h[?25l[30;93H~@k[1;6H[30;93H   [1;5H[30;105H5[1;5H[?25h[?25l[30;93H~@k[1;5H[30;93H   [1;4H[30;105H4[1;4H[?25h[?25l[30;93H~@k[1;4H[30;93H   [1;3H[30;105H3[1;3H[?25h[?25l[30;93H~@k[1;3H[30;93H   [1;2H[30;105H2[1;2H[?25h[?25l[30;93H~@k[1;2H[30;93H   [1;1H[30;105H1[1;1H[?25h[?25l[30;93H~@k[1;1H[30;93H   [1;1H[?25h[?25l[30;93H~@k[1;1H[30;93H   [1;1H[?25h[?25l[30;93Hi[1;1H[30;93H [1;1H[30;1H[1m-- INSERT --[m[30;13H[K[30;103H1,1[11CAll[1;1H[?25h[?25l[2;29r[2;1H[L[1;30r[1;1H[K[2;1Hhead [35m-n[m [35m$1[m [38;5;130m"[m[35m$2[m[38;5;130m"[m | [38;5;130mtail[m [35m-n[m [35m$3[m[30;103H[K[30;103H2,1[11CAll[2;1H[?25h[?25l[30;103H3[3;1H[?25h[?25l[30;103H2[2;1H[?25h[?25l[30;103H1[1;1H[?25h[?25l[34m#[m[30;105H2[1;2H[?25h[?25l[34mc[m[30;105H3[1;3H[?25h[?25l[34mo[m[30;105H4[1;4H[?25h[?25l[34mo[m[30;105H5[1;5H[?25h[?25l[1;4H[K[30;105H4[1;4H[?25h[?25l[34mm[m[30;105H5[1;5H[?25h[?25l[34mm[m[30;105H6[1;6H[?25h[?25l[34me[m[30;105H7[1;7H[?25h[?25l[34mn[m[30;105H8[1;8H[?25h[?25l[34mt[m[30;105H9[1;9H[?25h[?25l[34ms[m[30;105H10[1;10H[?25h[?25l[1;9H[K[30;105H9 [1;9H[?25h[?25l[1;8H[K[30;105H8[1;8H[?25h[?25l[1;7H[K[30;105H7[1;7H[?25h[?25l[1;6H[K[30;105H6[1;6H[?25h[?25l[1;5H[K[30;105H5[1;5H[?25h[?25l[1;4H[K[30;105H4[1;4H[?25h[?25l[1;3H[K[30;105H3[1;3H[?25h[?25l[1;2H[K[30;105H2[1;2H[?25h[?25l[34m [m[30;105H3[1;3H[?25h[?25l[34mS[m[30;105H4[1;4H[?25h[?25l[34me[m[30;105H5[1;5H[?25h[?25l[34ml[m[30;105H6[1;6H[?25h[?25l[34me[m[30;105H7[1;7H[?25h[?25l[34mc[m[30;105H8[1;8H[?25h[?25l[34mt[m[30;105H9[1;9H[?25h[?25l[34m [m[30;105H10[1;10H[?25h[?25l[34ml[m[30;106H1[1;11H[?25h[?25l[34mi[m[30;106H2[1;12H[?25h[?25l[34mn[m[30;106H3[1;13H[?25h[?25l[34me[m[30;106H4[1;14H[?25h[?25l[34ms[m[30;106H5[1;15H[?25h[?25l[34m [m[30;106H6[1;16H[?25h[?25l[34mf[m[30;106H7[1;17H[?25h[?25l[34mr[m[30;106H8[1;18H[?25h[?25l[34mo[m[30;106H9[1;19H[?25h[?25l[34mm[m[30;105H20[1;20H[?25h[?25l[34m [m[30;106H1[1;21H[?25h[?25l[34mt[m[30;106H2[1;22H[?25h[?25l[34mh[m[30;106H3[1;23H[?25h[?25l[34me[m[30;106H4[1;24H[?25h[?25l[34m [m[30;106H5[1;25H[?25h[?25l[34mi[m[30;106H6[1;26H[?25h[?25l[1;25H[K[30;106H5[1;25H[?25h[?25l[34mm[m[30;106H6[1;26H[?25h[?25l[34mi[m[30;106H7[1;27H[?25h[?25l[34md[m[30;106H8[1;28H[?25h[?25l[34md[m[30;106H9[1;29H[?25h[?25l[34ml[m[30;105H30[1;30H[?25h[?25l[34me[m[30;106H1[1;31H[?25h[?25l[34m [m[30;106H2[1;32H[?25h[?25l[34mo[m[30;106H3[1;33H[?25h[?25l[34mf[m[30;106H4[1;34H[?25h[?25l[34m [m[30;106H5[1;35H[?25h[?25l[34ma[m[30;106H6[1;36H[?25h[?25l[34m [m[30;106H7[1;37H[?25h[?25l[34mf[m[30;106H8[1;38H[?25h[?25l[34mi[m[30;106H9[1;39H[?25h[?25l[34ml[m[30;105H40[1;40H[?25h[?25l[34me[m[30;106H1[1;41H[?25h[?25l[2;29r[2;1H[L[1;30r[30;103H[K[30;103H2,1[11CAll[2;1H[?25h[?25l[34m#[m[30;105H2[2;2H[?25h[?25l[34m [m[30;105H3[2;3H[?25h[?25l[34mU[m[30;105H4[2;4H[?25h[?25l[34ms[m[30;105H5[2;5H[?25h[?25l[34ma[m[30;105H6[2;6H[?25h[?25l[34mg[m[30;105H7[2;7H[?25h[?25l[34me[m[30;105H8[2;8H[?25h[?25l[34m:[m[30;105H9[2;9H[?25h[?25l[34m [m[30;105H10[2;10H[?25h[?25l[34mb[m[30;106H1[2;11H[?25h[?25l[34ma[m[30;106H2[2;12H[?25h[?25l[34ms[m[30;106H3[2;13H[?25h[?25l[34mh[m[30;106H4[2;14H[?25h[?25l[34m [m[30;106H5[2;15H[?25h[?25l[34mm[m[30;106H6[2;16H[?25h[?25l[34mi[m[30;106H7[2;17H[?25h[?25l[34md[m[30;106H8[2;18H[?25h[?25l[34md[m[30;106H9[2;19H[?25h[?25l[34mh[m[30;105H20[2;20H[?25h[?25l[34ml[m[30;106H1[2;21H[?25h[?25l[34me[m[30;106H2[2;22H[?25h[?25l[34m.[m[30;106H3[2;23H[?25h[?25l[2;22H[K[30;106H2[2;22H[?25h[?25l[2;21H[K[30;106H1[2;21H[?25h[?25l[2;20H[K[30;106H0[2;20H[?25h[?25l[2;19H[K[30;105H19[2;19H[?25h[?25l[34ml[m[30;105H20[2;20H[?25h[?25l[34me[m[30;106H1[2;21H[?25h[?25l[34m.[m[30;106H2[2;22H[?25h[?25l[34ms[m[30;106H3[2;23H[?25h[?25l[34mh[m[30;106H4[2;24H[?25h[?25l[34m [m[30;106H5[2;25H[?25h[?25l[34mn[m[30;106H6[2;26H[?25h[?25l[34mu[m[30;106H7[2;27H[?25h[?25l[34mm[m[30;106H8[2;28H[?25h[?25l[34mb[m[30;106H9[2;29H[?25h[?25l[34me[m[30;105H30[2;30H[?25h[?25l[34mr[m[30;106H1[2;31H[?25h[?25l[34m [m[30;106H2[2;32H[?25h[?25l[34mo[m[30;106H3[2;33H[?25h[?25l[34mf[m[30;106H4[2;34H[?25h[?25l[34m [m[30;106H5[2;35H[?25h[?25l[34ml[m[30;106H6[2;36H[?25h[?25l[34mi[m[30;106H7[2;37H[?25h[?25l[34mn[m[30;106H8[2;38H[?25h[?25l[34me[m[30;106H9[2;39H[?25h[?25l[34ms[m[30;105H40[2;40H[?25h[?25l[34m [m[30;106H1[2;41H[?25h[?25l[34mf[m[30;106H2[2;42H[?25h[?25l[34mi[m[30;106H3[2;43H[?25h[?25l[34ml[m[30;106H4[2;44H[?25h[?25l[34me[m[30;106H5[2;45H[?25h[?25l[34mn[m[30;106H6[2;46H[?25h[?25l[34ma[m[30;106H7[2;47H[?25h[?25l[34mm[m[30;106H8[2;48H[?25h[?25l[34me[m[30;106H9[2;49H[?25h[?25l[34m [m[30;105H50[2;50H[?25h[?25l[34mt[m[30;106H1[2;51H[?25h[?25l[34ma[m[30;106H2[2;52H[?25h[?25l[34mi[m[30;106H3[2;53H[?25h[?25l[34ml[m[30;106H4[2;54H[?25h[?25l[34m [m[30;106H5[2;55H[?25h[?25l[34ml[m[30;106H6[2;56H[?25h[?25l[34mi[m[30;106H7[2;57H[?25h[?25l[34mn[m[30;106H8[2;58H[?25h[?25l[34me[m[30;106H9[2;59H[?25h[?25l[34ms[m[30;105H60[2;60H[?25h[?25l[34m`[m[30;106H1[2;61H[?25h[?25l[2;60H[K[30;106H0[2;60H[?25h[30;1H[K[2;59H[?25l[30;93H^[[2;59H[30;93H  [2;60H[30;103H2,59[10CAll[2;59H[?25h[?25l[30;93H:[2;59H[30;93H[K[30;1H:[?2004h[?25hwq[?25l[?2004l"middle.sh" 4L, 131C written[23;2t[23;1t
+[?2004l[?1l>[?25h[>4;m[?1049l[23;0;0t(base) ]0;sourav@TIGER02474: ~/TCE2023/exercise-data[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/exercise-data[00m$ vim middle.shbash middle.sh 3 basilik.dat 1[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kwc -l *d[K.dat  [K| sort-[K 0n[K[K-n
+  1 new.dat
+  3 basilik.dat
+  3 minotaur.dat
+  3 unicorn.dat
+  9 all.dat
+ 19 total
+(base) ]0;sourav@TIGER02474: ~/TCE2023/exercise-data[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023/exercise-data[00m$ exit
+exit
+
+Script done on 2023-02-20 11:10:38+05:30 [COMMAND_EXIT_CODE="0"]
+Script started on 2023-02-21 10:34:41+05:30 [TERM="xterm-256color" TTY="/dev/tty1" COLUMNS="120" LINES="30"]
+(base) ]0;sourav@TIGER02474: ~/TCE2023[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023[00m$ hiso[Ktory
+    1  sudo apt get install git
+    2  sudo apt install git
+    3  bash Miniconda3-latest-Linux-x86_64.sh
+    4  pwd
+    5  bash Downloads/Miniconda3-latest-Linux-x86_64.sh
+    6  bash C:\Users\sourav.agarwal\Downloads\Miniconda3-latest-Linux-x86_64.sh
+    7  pwd
+    8  ls
+    9  ls -al
+   10  git init
+   11  git config --global user.name "agasourav"
+   12  git config --global user.email "sourav.agarwal@tigeranalytics.com"
+   13  git config --global --list
+   14  ls
+   15  pwd
+   16  cd TCE2023
+   17  ls -F
+   18  cd ..
+   19  ls -F
+   20  ls --help
+   21  man ls
+   22  ls -j
+   23  ls
+   24  ls -t
+   25  ls -r
+   26  ls -F -a
+   27  cd -
+   28  cd home
+   29  cd ~
+   30  ls pwd
+   31  ls -r
+   32  ls -s
+   33  cd TCE2023
+   34  mkdir north-pacific-gyre
+   35  ls
+   36  ls nor
+   37  ls north-pacific-gyre/
+   38  exit
+   39  conda deactivate
+   40  script -a ~/my_unix_session
+   41  ls 
+   42  cat my_unix_session 
+   43  exit
+   44  cd TCE2023/north-pacific-gyre/
+   45  mkdir thesis
+   46  cd thesis
+   47  mkdir -p ../project/data ../project/results
+   48  ls
+   49  cd ..
+   50  ls
+   51  ls project
+   52  ls -FR project
+   53  cd thesis
+   54  nano draft.txt
+   55  ls
+   56  nano draft.txt
+   57  ls
+   58  exit
+   59  ls
+   60  ls TCE2023/
+   61  script -a ~/my_unix_session
+   62  exit
+   63  ls
+   64  cd TCE2023/
+   65  ls
+   66  cd north-pacific-gyre/
+   67  touch my_file.txt
+   68  ls
+   69  rm my_file.txt
+   70  ls -r
+   71  ls -FR
+   72  mv thesis/draft.txt thesis/quotes.txt
+   73  ls -FR
+   74  mkdir -p project/data/analyzed project/data/raw
+   75  touch project/data/analyzed/fructose.dat project/data/analyzed/sucrose.dat
+   76  ls project/data
+   77  cd project/data/analyzed
+   78  ls
+   79  mv fructose.data sucrose.data ../raw
+   80  mv fructose.dat sucrose.dat ../raw
+   81  ls 
+   82  ls ../raw
+   83  cd 
+   84  cd TCE2023/north-pacific-gyre/
+   85  ls
+   86  cd thesis
+   87  cp quotes.txt quotations.txt
+   88  ls
+   89  cd ..
+   90  cp -r thesis thesis_backup
+   91  ls
+   92  ls thesis_backup/
+   93  rm thesis_backup/
+   94  rm -r thesis_backup/
+   95  ls
+   96  ls -r *.txt
+   97  ls -rF *.txt
+   98  ls -FR *.txt
+   99  ls -FR *.dat
+  100  cd project/
+  101  ls
+  102  ls data
+  103  ls raw
+  104  ls data/raw
+  105  ls data/raw/*.dat
+  106  ls data/raw/*rose.dat
+  107  ls data/raw/*ose.dat
+  108  ls data/raw/*uc*.dat
+  109  ls data/raw/*.da?
+  110  exit
+  111  ls
+  112  script -a ~/my_unix_session
+  113  exit
+  114  ls
+  115  cd TCE2023/
+  116  ks
+  117  ls
+  118  cd north-pacific-gyre/
+  119  ls
+  120  cd project/
+  121  ls
+  122  cd data
+  123  ls
+  124  cd raw
+  125  ls
+  126  wc fructose.dat 
+  127  wc *.dat
+  128  wc -l *.data > lengths.txt
+  129  wc -l *.dat > lengths.txt
+  130  ls
+  131  cat lengths.txt 
+  132  vim fructose.dat
+  133  wc *.dat
+  134  cat fructose.dat 
+  135  vim fructose.dat 
+  136  cat fructose.dat 
+  137  vim fructose.dat 
+  138  cat fructose.dat 
+  139  wc *.dat
+  140  wc -l *.dat > lengths.txt
+  141  cat lengths.txt 
+  142  sort -n lengths.txt 
+  143  sort lengths.txt 
+  144  echo This is awesome
+  145  echo hello > testfile.txt
+  146  ls
+  147  cat testfile.txt 
+  148  echo hello >> testfile1.txt
+  149  ls
+  150  cat testfile*.txt
+  151  echo hello > testfile.txt
+  152  echo hello >> testfile1.txt
+  153  cat testfile*.txt
+  154  cat testfile1.txt
+  155  cat testfile.txt
+  156  exit
+  157  script -a ~/my_unix_session 
+  158  exit
+  159  ls
+  160  cd TCE2023/
+  161  ls
+  162  mkdir exercise-data
+  163  cd exercise-data/
+  164  cat basilik.dat
+  165  vim basilik.dat
+  166  cat basilik.dat
+  167  vim minotaur.dat
+  168  vim unicorn.dat
+  169  head -n 3 *.dat
+  170  for filename in *.dat; do head -n 3 $filename | tail -n 1; done
+  171  for digit in 0 1 2 3 4 5 6 7 8 9; do
+  172  for digit in 0 1 2 3 4 5 6 7 8 9; do echo $digit; done
+  173  for filename in *.dat; do cat $filename >> all.dat; done
+  174  ls
+  175  cat all.dat
+  176  echo hello, things are going good
+  177  cd ../
+  178  ls
+  179  ls north-pacific-gyre/
+  180  ls north-pacific-gyre/project/data/
+  181  ls north-pacific-gyre/project/data/raw/
+  182  cat north-pacific-gyre/project/data/raw/
+  183  cat north-pacific-gyre/project/data/raw/*
+  184  cd north-pacific-gyre/project/data
+  185  for datafile in */*ose.dat; do echo $datafile; done
+  186  for datafile in */*se.dat; do echo $datafile stats-$datafile; done
+  187  ls */
+  188  cd..
+  189  cd ..
+  190  ls ../*
+  191  touch sample_script.sh
+  192  vim sample_script.sh
+  193  bash sample_script.sh
+  194  history
+  195  history | tail -n 5
+  196  history | tail -n 10
+  197  ls ../*
+  198  for species in cubane ethane methane; do for temperature in 25 30 450 80; do mkdir $species-$temperature; done; done
+  199  ls
+  200  exit
+  201  ls
+  202  script -a ~/my_unix_session
+  203  exit
+  204  sudo apt install git-all
+  205  apt install git-all
+  206  exit
+  207  sudo apt install git-all
+  208  sudo apt-get install git
+  209  git config --list --show-origin
+  210  mkdir lgit
+  211  cd lgit
+  212  git init
+  213  git help config
+  214  git help -h
+  215  git help -a
+  216  exit
+  217  cd lgit/
+  218  git status
+  219  echo 'My demo git project' > README
+  220  git status
+  221  git add README
+  222  git status
+  223  vim CONTRIBUTING.md
+  224  git status
+  225  git add CONTRIBUTING.md 
+  226  git status
+  227  vim CONTRIBUTING.md 
+  228  git status
+  229  git add CONTRIBUTING.md 
+  230  git status
+  231  git status -s
+  232  cat .gitignore
+  233  vim .gitignore
+  234  git status
+  235  vim .gitignore
+  236  git diff
+  237  git diff --staged
+  238  git difftool --tool-help
+  239  git difftool
+  240  git difftool --staged
+  241  git add .gitignore
+  242  git status
+  243  git commit
+  244  ls
+  245  ls -al
+  246  git status
+  247  git commit
+  248  git status
+  249  git log
+  250  exit
+  251  git status
+  252  ls
+  253  cd TCE2023/
+  254  git status
+  255  history
+  256  script -a ~/my_git_session
+  257  ls -al
+  258  ls -al lgit
+  259  cat ~/my_git_session
+  260  script -a ~/my_git_session
+  261  exit
+  262  cd lgit/
+  263  ls
+  264  touch tempfile
+  265  git status
+  266  git add tempfile
+  267  git status
+  268  rm tempfile
+  269  git status
+  270  git rm tempfile
+  271  git status
+  272  ls
+  273  git mv CONTRIBUTING.md CONTRIBUTOR.md
+  274  git status
+  275  git log
+  276  git log -p
+  277  git log --stat
+  278  git log --pretty=oneline
+  279  git log --pretty=format:"%h - %an, %ar : %s"
+  280  git log --graph
+  281  git log -h
+  282  git --help log
+  283  exit
+  284  cd TCE2023/
+  285  ls
+  286  script -a ~/my_git_session
+  287  exit
+  288  git log
+  289  touch forgotten_file
+  290  git status
+  291  git commit --amend
+  292  git status
+  293  git log
+  294  git add forgotten_file 
+  295  git status
+  296  git commit --amend
+  297  git status
+  298  git log
+  299  git diff
+  300  ls
+  301  vim CONTRIBUTOR.md 
+  302  git status
+  303  git add CONTRIBUTOR.md 
+  304  git status
+  305  git checkout -- CONTRIBUTOR.md
+  306  git status
+  307  git reset HEAD CONTRIBUTOR.md
+  308  git status
+  309  git checkout -- CONTRIBUTOR.md
+  310  git status
+  311  cat CONTRIBUTOR.md 
+  312  git remote add origin https://github.com/agasourav/test_project_3147.git
+  313  git log
+  314  git push -u origin main
+  315  git push -u origin master
+  316  cd ..
+  317  git clone https://github.com/agasourav/test_project_3147.git
+  318  ls
+  319  cd test_project_3147/
+  320  git remote
+  321  git remote -v
+  322  cd ..
+  323  git remote
+  324  cd test_project_3147/
+  325  git remote add sa https://github.com/agasourav/test_project_3147
+  326  git remote -v
+  327  git fetch sa
+  328  git log master
+  329  cd ../lgit
+  330  git remove
+  331  git remote
+  332  ls
+  333  git remote -v
+  334  git log
+  335  git push origin master
+  336  git status
+  337  git log
+  338  git pull remote
+  339  git remote -v
+  340  ls
+  341  git pull origin
+  342  git pull origin main
+  343  git pull origin master
+  344  cd ../test_project_3147/
+  345  git pull origin
+  346  git log
+  347  git pull origin
+  348  git log
+  349  git pull origin main
+  350  git log
+  351  cd ../lgit/
+  352  git log
+  353  git remote -v
+  354  git pull origin main
+  355  git log
+  356  git remote -v
+  357  git status
+  358  git merge origin
+  359  git merge main
+  360  git merge origin main
+  361  git merge origin/main
+  362  exit
+  363  ls
+  364  cd TCE2023/
+  365  ls
+  366  cd lgit
+  367  script -a ~/my_git_session
+  368  exit
+  369  ls
+  370  cd TCE2023/
+  371  ls
+  372  ls -lr exercise-data/
+  373  cat exercise-data/basilik.dat 
+  374  head -n 5 exercise-data/basilik.dat exercise-data/minotaur.dat 
+  375  cd exercise-data/
+  376  for filename in *.data; do
+  377  for filename in *.data; do echo $filename; head -n 2 $filename | tail -n 1; done
+  378  for filename in *.dat do echo $filename; head -n 2 $filename | tail -n 1; done
+  379  for filename in *.dat; do echo $filename; head -n 2 $filename | tail -n 1; done
+  380  for datafile in m*.dat; do echo $filename
+  381  for datafile in m*.dat; do echo $datafile; echo "cat $datafile >> new.dat"; done
+  382  ls
+  383  for datafile in m*.dat; do echo cat $datafile >> new.dat; done
+  384  ls
+  385  cat new.dat
+  386  cat minotaur.dat 
+  387  cat middle.sh
+  388  vim middle.sh
+  389  cat middle.sh
+  390  bash middle.sh 
+  391  vim middle.sh
+  392  ls
+  393  bash middle.sh basilik.dat 
+  394  vim middle.sh
+  395  bash middle.sh 3 basilik.dat 1
+  396  vim middle.sh
+  397  wc -l *.dat | sort -n
+  398  exit
+  399  cat my_unix_session 
+  400  script -a ~/my_unix_session 
+  401  exit
+  402  history
+(base) ]0;sourav@TIGER02474: ~/TCE2023[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023[00m$ history | tail -5
+  399  cat my_unix_session 
+  400  script -a ~/my_unix_session 
+  401  exit
+  402  history
+  403  history | tail -5
+(base) ]0;sourav@TIGER02474: ~/TCE2023[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023[00m$ grep "The" *t[K.txt
+[01;31m[KThe[m[K Tao that is seen
+"My [01;31m[KThe[m[Ksis" is not found
+(base) ]0;sourav@TIGER02474: ~/TCE2023[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023[00m$ grep -e [K[K[K"the" */t[K[K.txt
+Is not [01;31m[Kthe[m[K true Tao, until
+and [01;31m[Kthe[m[K presence of absence:
+(base) ]0;sourav@TIGER02474: ~/TCE2023[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023[00m$ grep -e "the" *.txt
+Is not [01;31m[Kthe[m[K true Tao, until
+and [01;31m[Kthe[m[K presence of absence:
+(base) ]0;sourav@TIGER02474: ~/TCE2023[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023[00m$ grep -e "the" *.txt[C[1P[1@E
+Is not [01;31m[Kthe[m[K true Tao, until
+and [01;31m[Kthe[m[K presence of absence:
+(base) ]0;sourav@TIGER02474: ~/TCE2023[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023[00m$ grep -E "the" *.txt[1P[1@i
+[01;31m[KThe[m[K Tao that is seen
+Is not [01;31m[Kthe[m[K true Tao, until
+and [01;31m[Kthe[m[K presence of absence:
+"My [01;31m[KThe[m[Ksis" is not found
+(base) ]0;sourav@TIGER02474: ~/TCE2023[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023[00m$ grep =[K-n -i "the" *t[K.txt
+[32m[K1[m[K[36m[K:[m[K[01;31m[KThe[m[K Tao that is seen
+[32m[K2[m[K[36m[K:[m[KIs not [01;31m[Kthe[m[K true Tao, until
+[32m[K6[m[K[36m[K:[m[Kand [01;31m[Kthe[m[K presence of absence:
+[32m[K7[m[K[36m[K:[m[K"My [01;31m[KThe[m[Ksis" is not found
+(base) ]0;sourav@TIGER02474: ~/TCE2023[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023[00m$ grep -v "[K-i "the" *.txt
+You bring fresh toner.
+
+With Searching comes loss
+
+Yesterday it worked
+Today it is not working
+Software is like that.
+(base) ]0;sourav@TIGER02474: ~/TCE2023[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023[00m$ grep -n "the"[C[C-"the"i"the" "the"[C[C[C[C "*"."t"x"t"
+^C
+(base) ]0;sourav@TIGER02474: ~/TCE2023[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023[00m$ grep -n -i "the *.txt"[K[K[K[K[K[K[K" *.txt
+[32m[K1[m[K[36m[K:[m[K[01;31m[KThe[m[K Tao that is seen
+[32m[K2[m[K[36m[K:[m[KIs not [01;31m[Kthe[m[K true Tao, until
+[32m[K6[m[K[36m[K:[m[Kand [01;31m[Kthe[m[K presence of absence:
+[32m[K7[m[K[36m[K:[m[K"My [01;31m[KThe[m[Ksis" is not found
+(base) ]0;sourav@TIGER02474: ~/TCE2023[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023[00m$ find . "*.txt"
+.
+./exercise-data
+./exercise-data/all.dat
+./exercise-data/basilik.dat
+./exercise-data/middle.sh
+./exercise-data/minotaur.dat
+./exercise-data/new.dat
+./exercise-data/unicorn.dat
+./haiku.txt
+./lgit
+./lgit/.git
+./lgit/.git/branches
+./lgit/.git/COMMIT_EDIT
+./lgit/.git/COMMIT_EDITMSG
+./lgit/.git/config
+./lgit/.git/description
+./lgit/.git/FETCH_HEAD
+./lgit/.git/HEAD
+./lgit/.git/hooks
+./lgit/.git/hooks/applypatch-msg.sample
+./lgit/.git/hooks/commit-msg.sample
+./lgit/.git/hooks/fsmonitor-watchman.sample
+./lgit/.git/hooks/post-update.sample
+./lgit/.git/hooks/pre-applypatch.sample
+./lgit/.git/hooks/pre-commit.sample
+./lgit/.git/hooks/pre-merge-commit.sample
+./lgit/.git/hooks/pre-push.sample
+./lgit/.git/hooks/pre-rebase.sample
+./lgit/.git/hooks/pre-receive.sample
+./lgit/.git/hooks/prepare-commit-msg.sample
+./lgit/.git/hooks/update.sample
+./lgit/.git/index
+./lgit/.git/info
+./lgit/.git/info/exclude
+./lgit/.git/logs
+./lgit/.git/logs/HEAD
+./lgit/.git/logs/refs
+./lgit/.git/logs/refs/heads
+./lgit/.git/logs/refs/heads/master
+./lgit/.git/logs/refs/remotes
+./lgit/.git/logs/refs/remotes/origin
+./lgit/.git/logs/refs/remotes/origin/main
+./lgit/.git/objects
+./lgit/.git/objects/06
+./lgit/.git/objects/06/aeda905752a8dc21c011bff04064e019adcacf
+./lgit/.git/objects/15
+./lgit/.git/objects/15/898a1ed039a0d81f0b61479c513016014b9db2
+./lgit/.git/objects/1b
+./lgit/.git/objects/1b/c9fcc54203c16eb04cbcaba272082650de01a0
+./lgit/.git/objects/59
+./lgit/.git/objects/59/fe782f7f3a7b661f15bae976464d7bf78389b9
+./lgit/.git/objects/5a
+./lgit/.git/objects/5a/8a927fc065df2bb894308a07beeeaeb8eb3b07
+./lgit/.git/objects/67
+./lgit/.git/objects/67/a6095c910ef47641b23670cf7d529162e3eb53
+./lgit/.git/objects/72
+./lgit/.git/objects/72/4e57b9090b7b0029530dfd89283ff7a2e5a9de
+./lgit/.git/objects/77
+./lgit/.git/objects/77/ec821fd5609dcfed72dabcea00b35119467ffa
+./lgit/.git/objects/91
+./lgit/.git/objects/91/37d21ff1b9fbab56c542cfe03d911f64abd357
+./lgit/.git/objects/91/44ab42179864dd87d83763df3c071e574dd1ee
+./lgit/.git/objects/bd
+./lgit/.git/objects/bd/5cd4c2e575db0370700fa1eed62df4a10b4a64
+./lgit/.git/objects/c7
+./lgit/.git/objects/c7/98a557db1f0e3550c9cb0ebae69a3ba86456ef
+./lgit/.git/objects/dd
+./lgit/.git/objects/dd/fe74c24ffd98fe4468f00cc2bd65c71fb03cbd
+./lgit/.git/objects/e6
+./lgit/.git/objects/e6/9de29bb2d1d6434b8b29ae775ad8c2e48c5391
+./lgit/.git/objects/fb
+./lgit/.git/objects/fb/ef48387edccd61bd22b685241485359ad44da1
+./lgit/.git/objects/info
+./lgit/.git/objects/pack
+./lgit/.git/ORIG_HEAD
+./lgit/.git/refs
+./lgit/.git/refs/heads
+./lgit/.git/refs/heads/master
+./lgit/.git/refs/remotes
+./lgit/.git/refs/remotes/origin
+./lgit/.git/refs/remotes/origin/main
+./lgit/.git/refs/tags
+./lgit/.gitignore
+./lgit/CONTRIBUTOR.md
+./lgit/forgotten_file
+./lgit/README
+./north-pacific-gyre
+./north-pacific-gyre/project
+./north-pacific-gyre/project/cubane-25
+./north-pacific-gyre/project/cubane-30
+./north-pacific-gyre/project/cubane-450
+./north-pacific-gyre/project/cubane-80
+./north-pacific-gyre/project/data
+./north-pacific-gyre/project/data/analyzed
+./north-pacific-gyre/project/data/raw
+./north-pacific-gyre/project/data/raw/fructose.dat
+./north-pacific-gyre/project/data/raw/lengths.txt
+./north-pacific-gyre/project/data/raw/sucrose.dat
+./north-pacific-gyre/project/data/raw/testfile.txt
+./north-pacific-gyre/project/data/raw/testfile1.txt
+./north-pacific-gyre/project/ethane-25
+./north-pacific-gyre/project/ethane-30
+./north-pacific-gyre/project/ethane-450
+./north-pacific-gyre/project/ethane-80
+./north-pacific-gyre/project/methane-25
+./north-pacific-gyre/project/methane-30
+./north-pacific-gyre/project/methane-450
+./north-pacific-gyre/project/methane-80
+./north-pacific-gyre/project/results
+./north-pacific-gyre/project/sample_script.sh
+./north-pacific-gyre/thesis
+./north-pacific-gyre/thesis/quotations.txt
+./north-pacific-gyre/thesis/quotes.txt
+./test_project_3147
+./test_project_3147/.git
+./test_project_3147/.git/branches
+./test_project_3147/.git/config
+./test_project_3147/.git/description
+./test_project_3147/.git/FETCH_HEAD
+./test_project_3147/.git/HEAD
+./test_project_3147/.git/hooks
+./test_project_3147/.git/hooks/applypatch-msg.sample
+./test_project_3147/.git/hooks/commit-msg.sample
+./test_project_3147/.git/hooks/fsmonitor-watchman.sample
+./test_project_3147/.git/hooks/post-update.sample
+./test_project_3147/.git/hooks/pre-applypatch.sample
+./test_project_3147/.git/hooks/pre-commit.sample
+./test_project_3147/.git/hooks/pre-merge-commit.sample
+./test_project_3147/.git/hooks/pre-push.sample
+./test_project_3147/.git/hooks/pre-rebase.sample
+./test_project_3147/.git/hooks/pre-receive.sample
+./test_project_3147/.git/hooks/prepare-commit-msg.sample
+./test_project_3147/.git/hooks/update.sample
+./test_project_3147/.git/index
+./test_project_3147/.git/info
+./test_project_3147/.git/info/exclude
+./test_project_3147/.git/logs
+./test_project_3147/.git/logs/HEAD
+./test_project_3147/.git/logs/refs
+./test_project_3147/.git/logs/refs/heads
+./test_project_3147/.git/logs/refs/heads/master
+./test_project_3147/.git/logs/refs/remotes
+./test_project_3147/.git/logs/refs/remotes/origin
+./test_project_3147/.git/logs/refs/remotes/origin/main
+./test_project_3147/.git/objects
+./test_project_3147/.git/objects/1b
+./test_project_3147/.git/objects/1b/c9fcc54203c16eb04cbcaba272082650de01a0
+./test_project_3147/.git/objects/72
+./test_project_3147/.git/objects/72/4e57b9090b7b0029530dfd89283ff7a2e5a9de
+./test_project_3147/.git/objects/77
+./test_project_3147/.git/objects/77/ec821fd5609dcfed72dabcea00b35119467ffa
+./test_project_3147/.git/objects/info
+./test_project_3147/.git/objects/pack
+./test_project_3147/.git/refs
+./test_project_3147/.git/refs/heads
+./test_project_3147/.git/refs/heads/master
+./test_project_3147/.git/refs/remotes
+./test_project_3147/.git/refs/remotes/origin
+./test_project_3147/.git/refs/remotes/origin/main
+./test_project_3147/.git/refs/tags
+./test_project_3147/temp
+find: ‘*.txt’: No such file or directory
+(base) ]0;sourav@TIGER02474: ~/TCE2023[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023[00m$ grep [K[K[K[K[Kwc -l $(find -n[K[K. "*.txt")
+find: ‘*.txt’: No such file or directory
+wc: .: Is a directory
+      0 .
+wc: ./exercise-data: Is a directory
+      0 ./exercise-data
+      9 ./exercise-data/all.dat
+      3 ./exercise-data/basilik.dat
+      4 ./exercise-data/middle.sh
+      3 ./exercise-data/minotaur.dat
+      1 ./exercise-data/new.dat
+      3 ./exercise-data/unicorn.dat
+     11 ./haiku.txt
+wc: ./lgit: Is a directory
+      0 ./lgit
+wc: ./lgit/.git: Is a directory
+      0 ./lgit/.git
+wc: ./lgit/.git/branches: Is a directory
+      0 ./lgit/.git/branches
+     13 ./lgit/.git/COMMIT_EDIT
+     17 ./lgit/.git/COMMIT_EDITMSG
+      8 ./lgit/.git/config
+      1 ./lgit/.git/description
+      1 ./lgit/.git/FETCH_HEAD
+      1 ./lgit/.git/HEAD
+wc: ./lgit/.git/hooks: Is a directory
+      0 ./lgit/.git/hooks
+     15 ./lgit/.git/hooks/applypatch-msg.sample
+     24 ./lgit/.git/hooks/commit-msg.sample
+    109 ./lgit/.git/hooks/fsmonitor-watchman.sample
+      8 ./lgit/.git/hooks/post-update.sample
+     14 ./lgit/.git/hooks/pre-applypatch.sample
+     49 ./lgit/.git/hooks/pre-commit.sample
+     13 ./lgit/.git/hooks/pre-merge-commit.sample
+     53 ./lgit/.git/hooks/pre-push.sample
+    169 ./lgit/.git/hooks/pre-rebase.sample
+     24 ./lgit/.git/hooks/pre-receive.sample
+     42 ./lgit/.git/hooks/prepare-commit-msg.sample
+    128 ./lgit/.git/hooks/update.sample
+      2 ./lgit/.git/index
+wc: ./lgit/.git/info: Is a directory
+      0 ./lgit/.git/info
+      6 ./lgit/.git/info/exclude
+wc: ./lgit/.git/logs: Is a directory
+      0 ./lgit/.git/logs
+      3 ./lgit/.git/logs/HEAD
+wc: ./lgit/.git/logs/refs: Is a directory
+      0 ./lgit/.git/logs/refs
+wc: ./lgit/.git/logs/refs/heads: Is a directory
+      0 ./lgit/.git/logs/refs/heads
+      3 ./lgit/.git/logs/refs/heads/master
+wc: ./lgit/.git/logs/refs/remotes: Is a directory
+      0 ./lgit/.git/logs/refs/remotes
+wc: ./lgit/.git/logs/refs/remotes/origin: Is a directory
+      0 ./lgit/.git/logs/refs/remotes/origin
+      1 ./lgit/.git/logs/refs/remotes/origin/main
+wc: ./lgit/.git/objects: Is a directory
+      0 ./lgit/.git/objects
+wc: ./lgit/.git/objects/06: Is a directory
+      0 ./lgit/.git/objects/06
+      0 ./lgit/.git/objects/06/aeda905752a8dc21c011bff04064e019adcacf
+wc: ./lgit/.git/objects/15: Is a directory
+      0 ./lgit/.git/objects/15
+      0 ./lgit/.git/objects/15/898a1ed039a0d81f0b61479c513016014b9db2
+wc: ./lgit/.git/objects/1b: Is a directory
+      0 ./lgit/.git/objects/1b
+      1 ./lgit/.git/objects/1b/c9fcc54203c16eb04cbcaba272082650de01a0
+wc: ./lgit/.git/objects/59: Is a directory
+      0 ./lgit/.git/objects/59
+      0 ./lgit/.git/objects/59/fe782f7f3a7b661f15bae976464d7bf78389b9
+wc: ./lgit/.git/objects/5a: Is a directory
+      0 ./lgit/.git/objects/5a
+      3 ./lgit/.git/objects/5a/8a927fc065df2bb894308a07beeeaeb8eb3b07
+wc: ./lgit/.git/objects/67: Is a directory
+      0 ./lgit/.git/objects/67
+      1 ./lgit/.git/objects/67/a6095c910ef47641b23670cf7d529162e3eb53
+wc: ./lgit/.git/objects/72: Is a directory
+      0 ./lgit/.git/objects/72
+      0 ./lgit/.git/objects/72/4e57b9090b7b0029530dfd89283ff7a2e5a9de
+wc: ./lgit/.git/objects/77: Is a directory
+      0 ./lgit/.git/objects/77
+      2 ./lgit/.git/objects/77/ec821fd5609dcfed72dabcea00b35119467ffa
+wc: ./lgit/.git/objects/91: Is a directory
+      0 ./lgit/.git/objects/91
+      0 ./lgit/.git/objects/91/37d21ff1b9fbab56c542cfe03d911f64abd357
+      1 ./lgit/.git/objects/91/44ab42179864dd87d83763df3c071e574dd1ee
+wc: ./lgit/.git/objects/bd: Is a directory
+      0 ./lgit/.git/objects/bd
+      0 ./lgit/.git/objects/bd/5cd4c2e575db0370700fa1eed62df4a10b4a64
+wc: ./lgit/.git/objects/c7: Is a directory
+      0 ./lgit/.git/objects/c7
+      0 ./lgit/.git/objects/c7/98a557db1f0e3550c9cb0ebae69a3ba86456ef
+wc: ./lgit/.git/objects/dd: Is a directory
+      0 ./lgit/.git/objects/dd
+      3 ./lgit/.git/objects/dd/fe74c24ffd98fe4468f00cc2bd65c71fb03cbd
+wc: ./lgit/.git/objects/e6: Is a directory
+      0 ./lgit/.git/objects/e6
+      0 ./lgit/.git/objects/e6/9de29bb2d1d6434b8b29ae775ad8c2e48c5391
+wc: ./lgit/.git/objects/fb: Is a directory
+      0 ./lgit/.git/objects/fb
+      0 ./lgit/.git/objects/fb/ef48387edccd61bd22b685241485359ad44da1
+wc: ./lgit/.git/objects/info: Is a directory
+      0 ./lgit/.git/objects/info
+wc: ./lgit/.git/objects/pack: Is a directory
+      0 ./lgit/.git/objects/pack
+      1 ./lgit/.git/ORIG_HEAD
+wc: ./lgit/.git/refs: Is a directory
+      0 ./lgit/.git/refs
+wc: ./lgit/.git/refs/heads: Is a directory
+      0 ./lgit/.git/refs/heads
+      1 ./lgit/.git/refs/heads/master
+wc: ./lgit/.git/refs/remotes: Is a directory
+      0 ./lgit/.git/refs/remotes
+wc: ./lgit/.git/refs/remotes/origin: Is a directory
+      0 ./lgit/.git/refs/remotes/origin
+      1 ./lgit/.git/refs/remotes/origin/main
+wc: ./lgit/.git/refs/tags: Is a directory
+      0 ./lgit/.git/refs/tags
+      7 ./lgit/.gitignore
+      4 ./lgit/CONTRIBUTOR.md
+      0 ./lgit/forgotten_file
+      1 ./lgit/README
+wc: ./north-pacific-gyre: Is a directory
+      0 ./north-pacific-gyre
+wc: ./north-pacific-gyre/project: Is a directory
+      0 ./north-pacific-gyre/project
+wc: ./north-pacific-gyre/project/cubane-25: Is a directory
+      0 ./north-pacific-gyre/project/cubane-25
+wc: ./north-pacific-gyre/project/cubane-30: Is a directory
+      0 ./north-pacific-gyre/project/cubane-30
+wc: ./north-pacific-gyre/project/cubane-450: Is a directory
+      0 ./north-pacific-gyre/project/cubane-450
+wc: ./north-pacific-gyre/project/cubane-80: Is a directory
+      0 ./north-pacific-gyre/project/cubane-80
+wc: ./north-pacific-gyre/project/data: Is a directory
+      0 ./north-pacific-gyre/project/data
+wc: ./north-pacific-gyre/project/data/analyzed: Is a directory
+      0 ./north-pacific-gyre/project/data/analyzed
+wc: ./north-pacific-gyre/project/data/raw: Is a directory
+      0 ./north-pacific-gyre/project/data/raw
+      1 ./north-pacific-gyre/project/data/raw/fructose.dat
+      3 ./north-pacific-gyre/project/data/raw/lengths.txt
+      0 ./north-pacific-gyre/project/data/raw/sucrose.dat
+      1 ./north-pacific-gyre/project/data/raw/testfile.txt
+      2 ./north-pacific-gyre/project/data/raw/testfile1.txt
+wc: ./north-pacific-gyre/project/ethane-25: Is a directory
+      0 ./north-pacific-gyre/project/ethane-25
+wc: ./north-pacific-gyre/project/ethane-30: Is a directory
+      0 ./north-pacific-gyre/project/ethane-30
+wc: ./north-pacific-gyre/project/ethane-450: Is a directory
+      0 ./north-pacific-gyre/project/ethane-450
+wc: ./north-pacific-gyre/project/ethane-80: Is a directory
+      0 ./north-pacific-gyre/project/ethane-80
+wc: ./north-pacific-gyre/project/methane-25: Is a directory
+      0 ./north-pacific-gyre/project/methane-25
+wc: ./north-pacific-gyre/project/methane-30: Is a directory
+      0 ./north-pacific-gyre/project/methane-30
+wc: ./north-pacific-gyre/project/methane-450: Is a directory
+      0 ./north-pacific-gyre/project/methane-450
+wc: ./north-pacific-gyre/project/methane-80: Is a directory
+      0 ./north-pacific-gyre/project/methane-80
+wc: ./north-pacific-gyre/project/results: Is a directory
+      0 ./north-pacific-gyre/project/results
+      1 ./north-pacific-gyre/project/sample_script.sh
+wc: ./north-pacific-gyre/thesis: Is a directory
+      0 ./north-pacific-gyre/thesis
+      3 ./north-pacific-gyre/thesis/quotations.txt
+      3 ./north-pacific-gyre/thesis/quotes.txt
+wc: ./test_project_3147: Is a directory
+      0 ./test_project_3147
+wc: ./test_project_3147/.git: Is a directory
+      0 ./test_project_3147/.git
+wc: ./test_project_3147/.git/branches: Is a directory
+      0 ./test_project_3147/.git/branches
+     14 ./test_project_3147/.git/config
+      1 ./test_project_3147/.git/description
+      1 ./test_project_3147/.git/FETCH_HEAD
+      1 ./test_project_3147/.git/HEAD
+wc: ./test_project_3147/.git/hooks: Is a directory
+      0 ./test_project_3147/.git/hooks
+     15 ./test_project_3147/.git/hooks/applypatch-msg.sample
+     24 ./test_project_3147/.git/hooks/commit-msg.sample
+    109 ./test_project_3147/.git/hooks/fsmonitor-watchman.sample
+      8 ./test_project_3147/.git/hooks/post-update.sample
+     14 ./test_project_3147/.git/hooks/pre-applypatch.sample
+     49 ./test_project_3147/.git/hooks/pre-commit.sample
+     13 ./test_project_3147/.git/hooks/pre-merge-commit.sample
+     53 ./test_project_3147/.git/hooks/pre-push.sample
+    169 ./test_project_3147/.git/hooks/pre-rebase.sample
+     24 ./test_project_3147/.git/hooks/pre-receive.sample
+     42 ./test_project_3147/.git/hooks/prepare-commit-msg.sample
+    128 ./test_project_3147/.git/hooks/update.sample
+      1 ./test_project_3147/.git/index
+wc: ./test_project_3147/.git/info: Is a directory
+      0 ./test_project_3147/.git/info
+      6 ./test_project_3147/.git/info/exclude
+wc: ./test_project_3147/.git/logs: Is a directory
+      0 ./test_project_3147/.git/logs
+      1 ./test_project_3147/.git/logs/HEAD
+wc: ./test_project_3147/.git/logs/refs: Is a directory
+      0 ./test_project_3147/.git/logs/refs
+wc: ./test_project_3147/.git/logs/refs/heads: Is a directory
+      0 ./test_project_3147/.git/logs/refs/heads
+      1 ./test_project_3147/.git/logs/refs/heads/master
+wc: ./test_project_3147/.git/logs/refs/remotes: Is a directory
+      0 ./test_project_3147/.git/logs/refs/remotes
+wc: ./test_project_3147/.git/logs/refs/remotes/origin: Is a directory
+      0 ./test_project_3147/.git/logs/refs/remotes/origin
+      1 ./test_project_3147/.git/logs/refs/remotes/origin/main
+wc: ./test_project_3147/.git/objects: Is a directory
+      0 ./test_project_3147/.git/objects
+wc: ./test_project_3147/.git/objects/1b: Is a directory
+      0 ./test_project_3147/.git/objects/1b
+      1 ./test_project_3147/.git/objects/1b/c9fcc54203c16eb04cbcaba272082650de01a0
+wc: ./test_project_3147/.git/objects/72: Is a directory
+      0 ./test_project_3147/.git/objects/72
+      0 ./test_project_3147/.git/objects/72/4e57b9090b7b0029530dfd89283ff7a2e5a9de
+wc: ./test_project_3147/.git/objects/77: Is a directory
+      0 ./test_project_3147/.git/objects/77
+      2 ./test_project_3147/.git/objects/77/ec821fd5609dcfed72dabcea00b35119467ffa
+wc: ./test_project_3147/.git/objects/info: Is a directory
+      0 ./test_project_3147/.git/objects/info
+wc: ./test_project_3147/.git/objects/pack: Is a directory
+      0 ./test_project_3147/.git/objects/pack
+wc: ./test_project_3147/.git/refs: Is a directory
+      0 ./test_project_3147/.git/refs
+wc: ./test_project_3147/.git/refs/heads: Is a directory
+      0 ./test_project_3147/.git/refs/heads
+      1 ./test_project_3147/.git/refs/heads/master
+wc: ./test_project_3147/.git/refs/remotes: Is a directory
+      0 ./test_project_3147/.git/refs/remotes
+wc: ./test_project_3147/.git/refs/remotes/origin: Is a directory
+      0 ./test_project_3147/.git/refs/remotes/origin
+      1 ./test_project_3147/.git/refs/remotes/origin/main
+wc: ./test_project_3147/.git/refs/tags: Is a directory
+      0 ./test_project_3147/.git/refs/tags
+      1 ./test_project_3147/temp
+   1459 total
+(base) ]0;sourav@TIGER02474: ~/TCE2023[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023[00m$ wc -l $(find . "*.txt")[1P "*.txt")[1P"*.txt")[1P "*.txt")[1P "*.txt")[1P "*.txt")[1P "*.txt")[1P "*.txt")[1P "*.txt")[1P"*.txt")[1P "*.txt")[1P "*.txt")[1P"*.txt")[1P "*.txt")[1P "*.txt")[1P"*.txt")[1P*.txt")[1P.txt")[1Ptxt")[1Pxt")[1Pt")[1P")[1P)[Kfind . -type d
+.
+./exercise-data
+./lgit
+./lgit/.git
+./lgit/.git/branches
+./lgit/.git/hooks
+./lgit/.git/info
+./lgit/.git/logs
+./lgit/.git/logs/refs
+./lgit/.git/logs/refs/heads
+./lgit/.git/logs/refs/remotes
+./lgit/.git/logs/refs/remotes/origin
+./lgit/.git/objects
+./lgit/.git/objects/06
+./lgit/.git/objects/15
+./lgit/.git/objects/1b
+./lgit/.git/objects/59
+./lgit/.git/objects/5a
+./lgit/.git/objects/67
+./lgit/.git/objects/72
+./lgit/.git/objects/77
+./lgit/.git/objects/91
+./lgit/.git/objects/bd
+./lgit/.git/objects/c7
+./lgit/.git/objects/dd
+./lgit/.git/objects/e6
+./lgit/.git/objects/fb
+./lgit/.git/objects/info
+./lgit/.git/objects/pack
+./lgit/.git/refs
+./lgit/.git/refs/heads
+./lgit/.git/refs/remotes
+./lgit/.git/refs/remotes/origin
+./lgit/.git/refs/tags
+./north-pacific-gyre
+./north-pacific-gyre/project
+./north-pacific-gyre/project/cubane-25
+./north-pacific-gyre/project/cubane-30
+./north-pacific-gyre/project/cubane-450
+./north-pacific-gyre/project/cubane-80
+./north-pacific-gyre/project/data
+./north-pacific-gyre/project/data/analyzed
+./north-pacific-gyre/project/data/raw
+./north-pacific-gyre/project/ethane-25
+./north-pacific-gyre/project/ethane-30
+./north-pacific-gyre/project/ethane-450
+./north-pacific-gyre/project/ethane-80
+./north-pacific-gyre/project/methane-25
+./north-pacific-gyre/project/methane-30
+./north-pacific-gyre/project/methane-450
+./north-pacific-gyre/project/methane-80
+./north-pacific-gyre/project/results
+./north-pacific-gyre/thesis
+./test_project_3147
+./test_project_3147/.git
+./test_project_3147/.git/branches
+./test_project_3147/.git/hooks
+./test_project_3147/.git/info
+./test_project_3147/.git/logs
+./test_project_3147/.git/logs/refs
+./test_project_3147/.git/logs/refs/heads
+./test_project_3147/.git/logs/refs/remotes
+./test_project_3147/.git/logs/refs/remotes/origin
+./test_project_3147/.git/objects
+./test_project_3147/.git/objects/1b
+./test_project_3147/.git/objects/72
+./test_project_3147/.git/objects/77
+./test_project_3147/.git/objects/info
+./test_project_3147/.git/objects/pack
+./test_project_3147/.git/refs
+./test_project_3147/.git/refs/heads
+./test_project_3147/.git/refs/remotes
+./test_project_3147/.git/refs/remotes/origin
+./test_project_3147/.git/refs/tags
+(base) ]0;sourav@TIGER02474: ~/TCE2023[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023[00m$ find . -type f
+./exercise-data/all.dat
+./exercise-data/basilik.dat
+./exercise-data/middle.sh
+./exercise-data/minotaur.dat
+./exercise-data/new.dat
+./exercise-data/unicorn.dat
+./haiku.txt
+./lgit/.git/COMMIT_EDIT
+./lgit/.git/COMMIT_EDITMSG
+./lgit/.git/config
+./lgit/.git/description
+./lgit/.git/FETCH_HEAD
+./lgit/.git/HEAD
+./lgit/.git/hooks/applypatch-msg.sample
+./lgit/.git/hooks/commit-msg.sample
+./lgit/.git/hooks/fsmonitor-watchman.sample
+./lgit/.git/hooks/post-update.sample
+./lgit/.git/hooks/pre-applypatch.sample
+./lgit/.git/hooks/pre-commit.sample
+./lgit/.git/hooks/pre-merge-commit.sample
+./lgit/.git/hooks/pre-push.sample
+./lgit/.git/hooks/pre-rebase.sample
+./lgit/.git/hooks/pre-receive.sample
+./lgit/.git/hooks/prepare-commit-msg.sample
+./lgit/.git/hooks/update.sample
+./lgit/.git/index
+./lgit/.git/info/exclude
+./lgit/.git/logs/HEAD
+./lgit/.git/logs/refs/heads/master
+./lgit/.git/logs/refs/remotes/origin/main
+./lgit/.git/objects/06/aeda905752a8dc21c011bff04064e019adcacf
+./lgit/.git/objects/15/898a1ed039a0d81f0b61479c513016014b9db2
+./lgit/.git/objects/1b/c9fcc54203c16eb04cbcaba272082650de01a0
+./lgit/.git/objects/59/fe782f7f3a7b661f15bae976464d7bf78389b9
+./lgit/.git/objects/5a/8a927fc065df2bb894308a07beeeaeb8eb3b07
+./lgit/.git/objects/67/a6095c910ef47641b23670cf7d529162e3eb53
+./lgit/.git/objects/72/4e57b9090b7b0029530dfd89283ff7a2e5a9de
+./lgit/.git/objects/77/ec821fd5609dcfed72dabcea00b35119467ffa
+./lgit/.git/objects/91/37d21ff1b9fbab56c542cfe03d911f64abd357
+./lgit/.git/objects/91/44ab42179864dd87d83763df3c071e574dd1ee
+./lgit/.git/objects/bd/5cd4c2e575db0370700fa1eed62df4a10b4a64
+./lgit/.git/objects/c7/98a557db1f0e3550c9cb0ebae69a3ba86456ef
+./lgit/.git/objects/dd/fe74c24ffd98fe4468f00cc2bd65c71fb03cbd
+./lgit/.git/objects/e6/9de29bb2d1d6434b8b29ae775ad8c2e48c5391
+./lgit/.git/objects/fb/ef48387edccd61bd22b685241485359ad44da1
+./lgit/.git/ORIG_HEAD
+./lgit/.git/refs/heads/master
+./lgit/.git/refs/remotes/origin/main
+./lgit/.gitignore
+./lgit/CONTRIBUTOR.md
+./lgit/forgotten_file
+./lgit/README
+./north-pacific-gyre/project/data/raw/fructose.dat
+./north-pacific-gyre/project/data/raw/lengths.txt
+./north-pacific-gyre/project/data/raw/sucrose.dat
+./north-pacific-gyre/project/data/raw/testfile.txt
+./north-pacific-gyre/project/data/raw/testfile1.txt
+./north-pacific-gyre/project/sample_script.sh
+./north-pacific-gyre/thesis/quotations.txt
+./north-pacific-gyre/thesis/quotes.txt
+./test_project_3147/.git/config
+./test_project_3147/.git/description
+./test_project_3147/.git/FETCH_HEAD
+./test_project_3147/.git/HEAD
+./test_project_3147/.git/hooks/applypatch-msg.sample
+./test_project_3147/.git/hooks/commit-msg.sample
+./test_project_3147/.git/hooks/fsmonitor-watchman.sample
+./test_project_3147/.git/hooks/post-update.sample
+./test_project_3147/.git/hooks/pre-applypatch.sample
+./test_project_3147/.git/hooks/pre-commit.sample
+./test_project_3147/.git/hooks/pre-merge-commit.sample
+./test_project_3147/.git/hooks/pre-push.sample
+./test_project_3147/.git/hooks/pre-rebase.sample
+./test_project_3147/.git/hooks/pre-receive.sample
+./test_project_3147/.git/hooks/prepare-commit-msg.sample
+./test_project_3147/.git/hooks/update.sample
+./test_project_3147/.git/index
+./test_project_3147/.git/info/exclude
+./test_project_3147/.git/logs/HEAD
+./test_project_3147/.git/logs/refs/heads/master
+./test_project_3147/.git/logs/refs/remotes/origin/main
+./test_project_3147/.git/objects/1b/c9fcc54203c16eb04cbcaba272082650de01a0
+./test_project_3147/.git/objects/72/4e57b9090b7b0029530dfd89283ff7a2e5a9de
+./test_project_3147/.git/objects/77/ec821fd5609dcfed72dabcea00b35119467ffa
+./test_project_3147/.git/refs/heads/master
+./test_project_3147/.git/refs/remotes/origin/main
+./test_project_3147/temp
+(base) ]0;sourav@TIGER02474: ~/TCE2023[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023[00m$ find . -name *.txt
+./haiku.txt
+(base) ]0;sourav@TIGER02474: ~/TCE2023[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023[00m$ wc -l $(find . -name "*t[K.txt")
+ 11 ./haiku.txt
+  3 ./north-pacific-gyre/project/data/raw/lengths.txt
+  1 ./north-pacific-gyre/project/data/raw/testfile.txt
+  2 ./north-pacific-gyre/project/data/raw/testfile1.txt
+  3 ./north-pacific-gyre/thesis/quotations.txt
+  3 ./north-pacific-gyre/thesis/quotes.txt
+ 23 total
+(base) ]0;sourav@TIGER02474: ~/TCE2023[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023[00m$ exirt
+exirt: command not found
+(base) ]0;sourav@TIGER02474: ~/TCE2023[01;32msourav@TIGER02474[00m:[01;34m~/TCE2023[00m$ exit
+exit
+
+Script done on 2023-02-21 10:46:39+05:30 [COMMAND_EXIT_CODE="127"]
